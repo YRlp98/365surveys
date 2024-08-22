@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1 class="text-primary">hi mom</h1>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+	<div>
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</div>
 </template>

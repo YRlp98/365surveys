@@ -15,9 +15,18 @@
     --gray-3: #828282;
     --gray-4: #ACB4BC;
     --gray-5: #F4F7F8;
-    --linear-gradient: linear-gradient(45deg, var(--primary), var(--secondary), #f48fb1, #A951C4);
+    --linear-gradient: linear-gradient(45deg, var(--primary), var(--secondary), var(--primary));
 }
 
+.custom-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-container {
+    width: 76rem;
+    padding: 0 0.5rem;
+}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
