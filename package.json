@@ -17,6 +17,7 @@
     "@vueuse/core": "^11.0.1",
     "@vueuse/nuxt": "^11.0.1",
     "nuxt": "^3.12.4",
+    "nuxt-gsap-module": "^2.0.0",
     "vue": "latest"
   },
   "devDependencies": {

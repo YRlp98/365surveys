@@ -33,6 +33,8 @@
 	</nav>
 </template>
 
+<script setup lang="ts"></script>
+
 <style scoped>
 .active-link button {
 	border-color: #4275f4;
