@@ -39,13 +39,12 @@ export default defineNuxtConfig({
   },
 
   // Site maps
-  // sitemap: {
-  //   hostname: 'https://www.365 Surveys.co.uk',
-  //   routes: [
-  //     '/',
-  //     '/contact-us',
-  //   ],
-  // },
+  sitemap: {
+    hostname: 'https://www.365 Surveys.co.uk',
+    routes: [
+      '/',
+    ],
+  },
 
   // Aliases
   alias: {
@@ -63,7 +62,7 @@ export default defineNuxtConfig({
   },
 
   // Modules
-  modules: ['@nuxtjs/tailwindcss', "@nuxt/image"],
+  modules: ['@nuxtjs/tailwindcss', "@nuxt/image", "@nuxtjs/sitemap"],
   buildModules: [
     'nuxt-gsap-module'
   ],
