@@ -62,7 +62,13 @@ export default defineNuxtConfig({
   },
 
   // Modules
-  modules: ['@nuxtjs/tailwindcss', "@nuxt/image", "@nuxtjs/sitemap"],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    "@nuxt/image",
+    "@nuxtjs/sitemap",
+    '@vueuse/nuxt',
+    "@nuxt/icon"
+  ],
   buildModules: [
     'nuxt-gsap-module'
   ],
