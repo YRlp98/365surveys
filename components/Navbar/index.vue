@@ -1,5 +1,10 @@
 <template>
-	<nav class="w-full custom-wrapper fixed h-16 z-50 backdrop-blur-md bg-black-1/50">
+	<nav
+		:class="[
+			'w-full custom-wrapper h-16 fixed z-50 backdrop-blur-md transition-all duration-300',
+			isScrolled ? 'bg-black-1/50' : 'navbar-transparent',
+		]"
+	>
 		<!-- Container -->
 		<div class="custom-container flex items-center relative">
 			<!-- Left side -->
@@ -71,6 +76,7 @@
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
 
+const isScrolled = ref(false);
 const menuOverlay = ref(null);
 const navItems = ref<HTMLElement | null>(null);
 const navSocial = ref<HTMLElement | null>(null);
@@ -113,6 +119,18 @@ const closeMenu = () => {
 		},
 	});
 };
+
+const handleScroll = () => {
+	isScrolled.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+	window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+	window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style scoped>
