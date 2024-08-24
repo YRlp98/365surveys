@@ -54,6 +54,31 @@
 				/>
 			</div>
 		</section>
+
+		<!-- Section 3: Case Studies -->
+		<section class="custom-wrapper py-[11.125rem] bg-black-3">
+			<div class="custom-container">
+				<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">Case Studies</h2>
+
+				<p class="text-gray-4 text-2xl font-normal mt-12">
+					Explore our journey through real-world projects that highlight our expertise and dedication. Each case study
+					showcases how we've tackled unique challenges, delivered tailored solutions, and driven success for our
+					clients. From initial strategy to final implementation, discover the impact of our work and the stories behind
+					the results.
+				</p>
+
+				<!-- Second Row -->
+				<div class="flex flex-col md:flex-row items-center justify-between mt-16">
+					<CardCaseStudies class="md:w-2/3" />
+
+					<ButtonMoreRightArrow
+						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-4"
+						text="Browse All Case Studies"
+						link="/case-studies"
+					/>
+				</div>
+			</div>
+		</section>
 	</div>
 </template>
 

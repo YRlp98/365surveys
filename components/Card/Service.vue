@@ -13,7 +13,6 @@
 				{{ description }}
 			</div>
 		</div>
-		<!-- Use nuxt image -->
 		<img
 			:src="currentImage"
 			alt="Project Card"
