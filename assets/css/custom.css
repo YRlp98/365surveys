@@ -28,6 +28,12 @@
     padding: 0 0.5rem;
 }
 
+.stroked-text{
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary);
+    text-stroke: 2px var(--primary);
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 4px;
