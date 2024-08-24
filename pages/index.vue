@@ -13,14 +13,45 @@
 			<div class="custom-container">
 				<h2 class="text-xl font-light tracking-widest text-gray-5">About</h2>
 				<h1 class="mt-6 stroked-text text-6xl font-bold uppercase">365<br />surveys</h1>
-				<div class="mt-6 flex flex-wrap gap-12 justify-between items-end">
-					<p class="text-gray-4 text-2xl font-normal w-2/3">
+				<div class="mt-6 flex flex-wrap gap-12 justify-center md:justify-between items-end">
+					<p class="text-gray-4 text-2xl font-normal w-full md:w-2/3">
 						365 surveys is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 						ut labore et dolore magna aliqua.
 					</p>
 
 					<ButtonMoreRightArrow class="text-gray-4" text="Learn more about us" link="/about-us" />
 				</div>
+			</div>
+		</section>
+
+		<!-- Section 2: Services -->
+		<section class="custom-wrapper py-[11.125rem] bg-black-1">
+			<div class="custom-container">
+				<div class="flex flex-col space-y-40 md:flex-row md:space-y-0 items-center h-full">
+					<!-- Left side -->
+					<div class="flex flex-col justify-between w-full md:w-1/2 h-[20rem]">
+						<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">
+							Our Services,<br />
+							Your Solutions
+						</h2>
+
+						<p class="text-gray-4 text-2xl font-normal">
+							Explore our journey through real-world projects that highlight our expertise and dedication. Each case
+							study showcases how we've tackled unique challenges.
+						</p>
+					</div>
+
+					<!-- Right side -->
+					<div class="w-full md:w-1/2">
+						<SliderVerticalCard />
+					</div>
+				</div>
+
+				<ButtonMoreRightArrow
+					class="mt-16 justify-center md:justify-end text-gray-4"
+					text="Explore Our Services"
+					link="/services"
+				/>
 			</div>
 		</section>
 	</div>
