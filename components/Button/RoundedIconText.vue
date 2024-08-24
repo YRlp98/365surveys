@@ -1,5 +1,8 @@
 <template>
-	<NuxtLink class="btn text-gray-5 flex items-center justify-center shadow-lg shadow-dark-primary/50" :to="link">
+	<NuxtLink
+		class="btn text-gray-4 hover:text-gray-5 flex items-center justify-center shadow-lg shadow-dark-primary/50"
+		:to="link"
+	>
 		<Icon class="text-base" :name="icon" />
 		<span class="text-sm">{{ text }}</span>
 	</NuxtLink>

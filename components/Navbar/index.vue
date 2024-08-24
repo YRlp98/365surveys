@@ -10,15 +10,15 @@
 			<!-- Left side -->
 			<div class="flex items-center text-gray-4">
 				<!-- Menu -->
-				<Icon name="ph:list-bold" class="text-3xl cursor-pointer hover:text-white" @click="openMenu" />
+				<Icon name="ph:list-bold" class="text-3xl cursor-pointer hover:text-gray-5" @click="openMenu" />
 
 				<!-- Links -->
 				<div class="pl-12 space-x-7 hidden md:block">
 					<NuxtLink to="/" class="nav-link" active-class="active-link">
-						<button class="h-16 border-b-2 border-transparent">Home</button>
+						<button class="h-16 border-b-2 border-transparent hover:text-gray-5">Home</button>
 					</NuxtLink>
 					<NuxtLink to="/about-us" class="nav-link" active-class="active-link">
-						<button class="h-16 border-b-2 border-transparent">About Us</button>
+						<button class="h-16 border-b-2 border-transparent hover:text-gray-5">About Us</button>
 					</NuxtLink>
 				</div>
 			</div>
