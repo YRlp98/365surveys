@@ -16,6 +16,7 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
     font-family: 'Kanit', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img, picture, video, canvas, svg {

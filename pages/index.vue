@@ -2,9 +2,12 @@
 	<div class="overflow-x-hidden">
 		<!-- Hero Section -->
 		<section class="custom-wrapper hero-background h-screen pt-16">
-			<div class="custom-container flex items-center justify-center">
+			<div class="custom-container flex flex-col items-center justify-center">
 				<!-- Logo -->
 				<img src="/assets/images/Logo.svg" alt="Logo" class="h-[31rem] px-8 md:px-0-" id="logo" />
+
+				<!-- Scroll -->
+				<WidgetScroll id="scroll" class="absolute bottom-12" />
 			</div>
 		</section>
 
@@ -118,6 +121,12 @@ const { $gsap } = useNuxtApp();
 onMounted(() => {
 	//* Hero Section Animations
 	$gsap.fromTo("#logo", { opacity: 0, y: 200 }, { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+
+	$gsap.fromTo(
+		"#scroll",
+		{ opacity: 0, y: -200 },
+		{ delay: 0.15, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" }
+	);
 	//* ==========================
 
 	//* About Us Section Animations
@@ -207,7 +216,6 @@ onMounted(() => {
 			start: "top bottom",
 			end: "center 80%",
 			scrub: 1,
-			markers: true,
 		},
 		y: 100,
 		opacity: 0,
