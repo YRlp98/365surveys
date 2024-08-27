@@ -13,7 +13,7 @@
 			<div class="custom-container">
 				<h2 class="text-xl font-light tracking-widest text-gray-5">About</h2>
 				<h1 class="mt-6 stroked-text text-6xl font-bold uppercase">365<br />surveys</h1>
-				<div class="mt-6 flex flex-wrap gap-12 justify-center md:justify-between items-end">
+				<div class="mt-6 flex flex-wrap gap-12 justify-center md:justify-between items-center">
 					<p class="text-gray-4 text-2xl font-normal w-full md:w-2/3">
 						365 surveys is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 						ut labore et dolore magna aliqua.
@@ -74,6 +74,35 @@
 					<ButtonMoreRightArrow
 						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-4"
 						text="Browse All Case Studies"
+						link="/case-studies"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section 4: ContactUs -->
+		<section class="custom-wrapper py-[11.125rem] bg-black-1">
+			<div class="custom-container">
+				<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">Get in Touch</h2>
+
+				<p class="text-gray-4 text-2xl font-normal mt-12">
+					We’re here to help with any questions or inquiries you may have. Whether you want to collaborate, learn more
+					about our services, or just say hello, we'd love to hear from you. Don’t hesitate to reach out!
+				</p>
+
+				<!-- Second Row -->
+				<div class="flex flex-col md:flex-row items-center justify-between mt-12 text-gray-4">
+					<div class="flex flex-col space-y-2">
+						<span><b>Email:</b> Ops@365surveys.co.uk</span>
+						<span><b>Phone:</b> 01963 361123</span>
+						<span
+							><b>Address:</b> Office Suite 2, Brickfield Offices, Wincanton BA9 8EG, United Kingdom</span
+						>
+					</div>
+
+					<ButtonMoreRightArrow
+						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-4"
+						text="Contact Us Form"
 						link="/case-studies"
 					/>
 				</div>
