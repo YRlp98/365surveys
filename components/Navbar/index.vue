@@ -97,16 +97,14 @@ const openMenu = () => {
 		});
 	}
 
-	if (navSocial.value) {
-		$gsap.from(navSocial.value, {
-			y: "200",
-			stagger: 0.2,
-			duration: 1,
-			delay: 1,
-			opacity: 0,
-			ease: "power4.out",
-		});
-	}
+	$gsap.from(navSocial.value, {
+		y: "200",
+		stagger: 0.2,
+		duration: 1,
+		delay: 1,
+		opacity: 0,
+		ease: "power4.out",
+	});
 };
 
 const closeMenu = () => {

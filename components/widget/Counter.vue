@@ -18,7 +18,7 @@ const animatedNumber = ref(0);
 onMounted(() => {
 	$gsap.to(animatedNumber, {
 		value: props.number,
-		duration: 1,
+		duration: 1.25,
 		ease: "none",
 		onUpdate: () => {
 			animatedNumber.value = Math.floor(animatedNumber.value);
