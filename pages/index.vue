@@ -10,7 +10,7 @@
 
 		<!-- Section 1: About -->
 		<section class="custom-wrapper py-[11.125rem] bg-black-3">
-			<div class="custom-container">
+			<div id="about-section" class="custom-container">
 				<h2 class="text-xl font-light tracking-widest text-gray-5">About</h2>
 				<h1 class="mt-6 stroked-text text-6xl font-bold uppercase">365<br />surveys</h1>
 				<div class="mt-6 flex flex-wrap gap-12 justify-center md:justify-between items-center">
@@ -19,14 +19,14 @@
 						ut labore et dolore magna aliqua.
 					</p>
 
-					<ButtonMoreRightArrow class="text-gray-4" text="Learn more about us" link="/about-us" />
+					<ButtonMoreRightArrow id="about-button" class="text-gray-4" text="Learn more about us" link="/about-us" />
 				</div>
 			</div>
 		</section>
 
 		<!-- Section 2: Services -->
 		<section class="custom-wrapper py-[11.125rem] bg-black-1">
-			<div class="custom-container">
+			<div id="services-section" class="custom-container">
 				<div class="flex flex-col space-y-40 md:flex-row md:space-y-0 items-center h-full">
 					<!-- Left side -->
 					<div class="flex flex-col justify-between w-full md:w-1/2 h-[20rem]">
@@ -42,12 +42,13 @@
 					</div>
 
 					<!-- Right side -->
-					<div class="w-full md:w-1/2">
+					<div id="services-slide" class="w-full md:w-1/2">
 						<SliderVerticalCard />
 					</div>
 				</div>
 
 				<ButtonMoreRightArrow
+					id="services-button"
 					class="mt-16 justify-center md:justify-end text-gray-4"
 					text="Explore Our Services"
 					link="/services"
@@ -57,7 +58,7 @@
 
 		<!-- Section 3: Case Studies -->
 		<section class="custom-wrapper py-[11.125rem] bg-black-3">
-			<div class="custom-container">
+			<div id="case-section" class="custom-container">
 				<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">Case Studies</h2>
 
 				<p class="text-gray-4 text-2xl font-normal mt-12">
@@ -69,9 +70,10 @@
 
 				<!-- Second Row -->
 				<div class="flex flex-col md:flex-row items-center justify-between mt-16">
-					<CardCaseStudies class="md:w-2/3" />
+					<CardCaseStudies id="case-slide" class="md:w-2/3" />
 
 					<ButtonMoreRightArrow
+						id="case-button"
 						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-4"
 						text="Browse All Case Studies"
 						link="/case-studies"
@@ -82,25 +84,24 @@
 
 		<!-- Section 4: ContactUs -->
 		<section class="custom-wrapper py-[11.125rem] bg-black-1">
-			<div class="custom-container">
-				<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">Get in Touch</h2>
+			<div id="contact-section" class="custom-container">
+				<h2 id="contact-title" class="text-xl font-light tracking-widest leading-10 text-gray-5">Get in Touch</h2>
 
-				<p class="text-gray-4 text-2xl font-normal mt-12">
+				<p id="contact-title" class="text-gray-4 text-2xl font-normal mt-12">
 					We’re here to help with any questions or inquiries you may have. Whether you want to collaborate, learn more
 					about our services, or just say hello, we'd love to hear from you. Don’t hesitate to reach out!
 				</p>
 
 				<!-- Second Row -->
-				<div class="flex flex-col md:flex-row items-center justify-between mt-12 text-gray-4">
+				<div id="contact-info" class="flex flex-col md:flex-row items-center justify-between mt-12 text-gray-4">
 					<div class="flex flex-col space-y-2">
 						<span><b>Email:</b> Ops@365surveys.co.uk</span>
 						<span><b>Phone:</b> 01963 361123</span>
-						<span
-							><b>Address:</b> Office Suite 2, Brickfield Offices, Wincanton BA9 8EG, United Kingdom</span
-						>
+						<span><b>Address:</b> Office Suite 2, Brickfield Offices, Wincanton BA9 8EG, United Kingdom</span>
 					</div>
 
 					<ButtonMoreRightArrow
+						id="contact-button"
 						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-4"
 						text="Contact Us Form"
 						link="/case-studies"
@@ -115,7 +116,148 @@
 const { $gsap } = useNuxtApp();
 
 onMounted(() => {
+	//* Hero Section Animations
 	$gsap.fromTo("#logo", { opacity: 0, y: 200 }, { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+	//* ==========================
+
+	//* About Us Section Animations
+	$gsap.from("#about-section", {
+		scrollTrigger: {
+			trigger: "#about-section",
+			start: "top bottom",
+			scrub: 1,
+		},
+		y: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#about-button", {
+		scrollTrigger: {
+			trigger: "#about-button",
+			start: "top 150%",
+			scrub: 1,
+		},
+		x: -100,
+		opacity: 0,
+		duration: 1.4,
+		ease: "power3.out",
+		delay: 0.4,
+	});
+	//* ==========================
+
+	//* Services Section Animations
+	$gsap.from("#services-section", {
+		scrollTrigger: {
+			trigger: "#services-section",
+			start: "top bottom",
+			scrub: 1,
+		},
+		y: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#services-slide", {
+		scrollTrigger: {
+			trigger: "#services-slide",
+			start: "top bottom",
+			end: "center 80%",
+			scrub: 1,
+		},
+		y: 150,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#services-button", {
+		scrollTrigger: {
+			trigger: "#services-button",
+			start: "top bottom",
+			end: "center 80%",
+			scrub: 1,
+		},
+		x: -100,
+		opacity: 0,
+		duration: 1.4,
+		ease: "power3.out",
+		delay: 0.4,
+	});
+	//* ==========================
+
+	//* Case Section Animations
+	$gsap.from("#case-section", {
+		scrollTrigger: {
+			trigger: "#case-section",
+			start: "top bottom",
+			scrub: 1,
+		},
+		y: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#case-slide", {
+		scrollTrigger: {
+			trigger: "#case-slide",
+			start: "top bottom",
+			end: "center 80%",
+			scrub: 1,
+			markers: true,
+		},
+		y: 100,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#case-button", {
+		scrollTrigger: {
+			trigger: "#case-button",
+			start: "top bottom",
+			end: "center 80%",
+			scrub: 1,
+		},
+		x: -100,
+		opacity: 0,
+		duration: 1.4,
+		ease: "power3.out",
+		delay: 0.4,
+	});
+	//* ==========================
+
+	//* Contact Us Section Animations
+	$gsap.from("#contact-section", {
+		scrollTrigger: {
+			trigger: "#contact-section",
+			start: "top bottom",
+			end: "center 50%",
+			scrub: 1,
+		},
+		y: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#contact-button", {
+		scrollTrigger: {
+			trigger: "#contact-button",
+			start: "top bottom",
+			end: "center 50%",
+			scrub: 1,
+		},
+		x: -100,
+		opacity: 0,
+		duration: 1.4,
+		ease: "power3.out",
+		delay: 0.4,
+	});
+	//* ==========================
 });
 </script>
 
