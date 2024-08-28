@@ -26,12 +26,12 @@ import { computed, defineProps, onMounted } from "vue";
 import stock1 from "/assets/images/stock1.jpg";
 import stock2 from "/assets/images/stock2.jpg";
 import stock3 from "/assets/images/stock3.jpg";
-import driverBehaviour from "/assets/images/driverBehaviour.jpg";
-import droneSurveys from "/assets/images/droneSurveys.jpg";
-import parking from "/assets/images/parking.jpg";
-import publicTransport from "/assets/images/publicTransport.jpg";
-import trafficSpeed from "/assets/images/trafficSpeed.jpg";
-import turningCounts from "/assets/images/turningCounts.jpg";
+import driverBehaviour from "/assets/images/services/driverBehaviour.jpg";
+import droneSurveys from "/assets/images/services/droneSurveys.jpg";
+import parking from "/assets/images/services/parking.jpg";
+import publicTransport from "/assets/images/services/publicTransport.jpg";
+import trafficSpeed from "/assets/images/services/trafficSpeed.jpg";
+import turningCounts from "/assets/images/services/turningCounts.jpg";
 
 const props = defineProps<{
 	title: string;
