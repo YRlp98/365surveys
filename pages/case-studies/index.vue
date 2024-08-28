@@ -18,6 +18,18 @@
 	</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { $gsap } = useNuxtApp();
+
+onMounted(() => {
+	$gsap.fromTo(
+		"#page-title",
+		{ opacity: 0, x: -100 },
+		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo("#content", { opacity: 0, y: 100 }, { delay: 0.5, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+});
+</script>
 
 <style scoped></style>
