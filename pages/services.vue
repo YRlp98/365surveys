@@ -9,8 +9,8 @@
 					<h1 class="text-xl font-bold">Services</h1>
 				</div>
 
-				<!-- Contents Wrapper -->
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-20">
+				<!-- Content Wrapper -->
+				<div id="content" class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-20">
 					<CardService
 						class="h-[25rem]"
 						title="Traffic Counts"
@@ -80,6 +80,39 @@
 	</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { $gsap } = useNuxtApp();
+
+onMounted(() => {
+	$gsap.fromTo(
+		"#page-title",
+		{ opacity: 0, x: -100 },
+		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo("#content", { opacity: 0, y: 100 }, { delay: 0.5, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+
+	// Cards Animation
+	// const cards = document.querySelectorAll(".card");
+	// cards.forEach((card, index) => {
+	// 	$gsap.fromTo(
+	// 		card,
+	// 		{ opacity: 0, y: 150 },
+	// 		{
+	// 			opacity: 1,
+	// 			y: 0,
+	// 			duration: 1,
+	// 			ease: "power3.out",
+	// 			scrollTrigger: {
+	// 				trigger: card,
+	// 				start: "top 140%",
+	// 				toggleActions: "play none none none",
+	// 				scrub: 1,
+	// 			},
+	// 		}
+	// 	);
+	// });
+});
+</script>
 
 <style scoped></style>
