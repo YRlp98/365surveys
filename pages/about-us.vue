@@ -1,5 +1,5 @@
 <template>
-	<div class="overflow-x-hidden bg-black-3">
+	<div class="overflow-hidden bg-black-3">
 		<!-- Hero Section -->
 		<section class="custom-wrapper h-screen pt-32">
 			<div class="custom-container flex flex-col">
