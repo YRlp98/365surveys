@@ -93,11 +93,67 @@
 
 <script setup lang="ts">
 const route = useRoute();
+const { $gsap } = useNuxtApp();
 
 const currentPage = computed(() => {
 	const routeName = route.name ? route.name.toString() : "";
 	const pageTitle = routeName.split("-").slice(2).join(" ");
 	return pageTitle ? pageTitle.replace(/-/g, " ") : "Page";
+});
+
+onMounted(() => {
+	//* Hero section animations
+	$gsap.fromTo(
+		"#page-path",
+		{ opacity: 0, x: -100 },
+		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo(
+		"#page-title",
+		{ opacity: 0, y: 5 },
+		{ delay: 1.5, opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo(
+		"#hero-title",
+		{ opacity: 0, y: 100 },
+		{ delay: 0.5, opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+	);
+
+	$gsap.fromTo(
+		"#hero-scroll",
+		{ opacity: 0, y: -100 },
+		{ delay: 0.5, opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+	);
+	//* ==========================
+
+	//* Content Section Animations
+	$gsap.from("#content-section", {
+		scrollTrigger: {
+			trigger: "#content-section",
+			start: "top bottom",
+			scrub: 1,
+		},
+		y: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#back-button", {
+		scrollTrigger: {
+			trigger: "#back-button",
+			start: "top bottom",
+			end: "center 70%",
+			scrub: 1,
+		},
+		x: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+	//* ==========================
 });
 </script>
 
