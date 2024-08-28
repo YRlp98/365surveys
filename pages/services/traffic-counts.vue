@@ -7,22 +7,22 @@
 				<div id="page-path" class="flex items-center text-gray-4 space-x-1.5 mb-8">
 					<icon class="text-2xl" name="material-symbols:home-repair-service-outline-sharp" />
 					<NuxtLink class="text-xl font-bold" to="/services">Services</NuxtLink>
-					<h3 class="text-gray-5 text-sm font-thin mt-1">/ {{ currentPage }}</h3>
+					<h3 id="page-title" class="text-gray-5 text-sm font-thin mt-1">/ {{ currentPage }}</h3>
 				</div>
 
 				<div class="flex items-center justify-center h-full mb-[15%]">
 					<!-- Title -->
-					<h1 class="text-gray-5 text-5xl font-bold">Traffic Counts</h1>
+					<h1 id="hero-title" class="text-gray-5 text-5xl font-bold">Traffic Counts</h1>
 
 					<!-- Scroll -->
-					<WidgetScroll id="scroll" class="absolute bottom-12" />
+					<WidgetScroll id="hero-scroll" class="absolute bottom-12" />
 				</div>
 			</div>
 		</section>
 
 		<!-- Content Section -->
 		<section class="custom-wrapper pt-24 pb-[320px]">
-			<div class="custom-container flex flex-col">
+			<div id="content-section" class="custom-container flex flex-col">
 				<!-- Content -->
 				<div class="flex flex-col text-white text-base space-y-8">
 					<!-- Image and Description -->
@@ -53,6 +53,7 @@
 				</div>
 
 				<ButtonBackLeftArrow
+					id="back-button"
 					class="text-gray-5 justify-end mt-[10.25rem]"
 					text="Back to Services page"
 					link="/services"
@@ -64,11 +65,67 @@
 
 <script setup lang="ts">
 const route = useRoute();
+const { $gsap } = useNuxtApp();
 
 const currentPage = computed(() => {
 	const routeName = route.name ? route.name.toString() : "";
 	const pageTitle = routeName.split("-").slice(1).join(" ");
 	return pageTitle ? pageTitle.replace(/-/g, " ") : "Page";
+});
+
+onMounted(() => {
+	//* Hero section animations
+	$gsap.fromTo(
+		"#page-path",
+		{ opacity: 0, x: -100 },
+		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo(
+		"#page-title",
+		{ opacity: 0, y: 5 },
+		{ delay: 1.5, opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo(
+		"#hero-title",
+		{ opacity: 0, y: 100 },
+		{ delay: 0.5, opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+	);
+
+	$gsap.fromTo(
+		"#hero-scroll",
+		{ opacity: 0, y: -100 },
+		{ delay: 0.5, opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+	);
+	//* ==========================
+
+	//* Content Section Animations
+	$gsap.from("#content-section", {
+		scrollTrigger: {
+			trigger: "#content-section",
+			start: "top bottom",
+			scrub: 1,
+		},
+		y: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+
+	$gsap.from("#back-button", {
+		scrollTrigger: {
+			trigger: "#back-button",
+			start: "top bottom",
+			end: "center 70%",
+			scrub: 1,
+		},
+		x: 50,
+		opacity: 0,
+		duration: 1,
+		ease: "power3.out",
+	});
+	//* ==========================
 });
 </script>
 
