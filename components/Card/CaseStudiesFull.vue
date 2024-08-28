@@ -2,14 +2,14 @@
 	<div class="">
 		<div class="gallery-wrap">
 			<!-- Item 1 -->
-			<NuxtLink class="item item-1 flex flex-col" to="/about-us">
+			<NuxtLink class="item item-1 flex flex-col" to="/case-studies/A382-Drumbridges-to-Newton-Abbot">
 				<!-- Content -->
 				<div
 					class="content file:z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5"
 				>
 					<!-- Title -->
 					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">DCO Support to A428</h3>
+						<h3 class="text-2xl font-bold tracking-widest">A382 Drumbridges to Newton Abbot</h3>
 						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
 					</div>
 					<!-- Description -->
@@ -27,11 +27,13 @@
 				>
 					<!-- Title -->
 					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">title</h3>
+						<h3 class="text-2xl font-bold tracking-widest">A303 Stonehenge</h3>
 						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
 					</div>
 					<!-- Description -->
-					<div class="mt-6 text-base">description</div>
+					<div class="mt-6 text-base">
+						Production of CAD modelling, simulations and rendering for mechanical and civil applications.
+					</div>
 				</div>
 			</NuxtLink>
 
@@ -43,11 +45,13 @@
 				>
 					<!-- Title -->
 					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">title</h3>
+						<h3 class="text-2xl font-bold tracking-widest">A64 Traffic Management</h3>
 						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
 					</div>
 					<!-- Description -->
-					<div class="mt-6 text-base">description</div>
+					<div class="mt-6 text-base">
+						Production of CAD modelling, simulations and rendering for mechanical and civil applications.
+					</div>
 				</div>
 			</NuxtLink>
 
@@ -59,11 +63,13 @@
 				>
 					<!-- Title -->
 					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">title</h3>
+						<h3 class="text-2xl font-bold tracking-widest">Drone example</h3>
 						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
 					</div>
 					<!-- Description -->
-					<div class="mt-6 text-base">description</div>
+					<div class="mt-6 text-base">
+						Production of CAD modelling, simulations and rendering for mechanical and civil applications.
+					</div>
 				</div>
 			</NuxtLink>
 		</div>
@@ -129,7 +135,7 @@
 .item-1 {
 	border-radius: 12px 0 0 12px;
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/stock1.jpg");
+		url("/assets/images/case-studies/A382-Drumbridges-to-Newton-Abbot.jpg");
 }
 
 .item-2 {
