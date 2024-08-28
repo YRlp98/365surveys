@@ -16,7 +16,7 @@
 						title="Traffic Counts"
 						description="Production of CAD modelling, simulations and rendering for mechanical and civil applications"
 						image="stock2"
-						link="#"
+						link="/services/traffic-counts"
 					/>
 
 					<CardService
