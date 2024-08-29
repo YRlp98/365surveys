@@ -4,7 +4,8 @@
 		<section class="custom-wrapper hero-background h-screen pt-16">
 			<div class="custom-container flex flex-col items-center justify-center">
 				<!-- Logo -->
-				<img src="/assets/images/Logo.svg" alt="Logo" class="h-[31rem] px-8 md:px-0-" id="logo" />
+				<!-- <img src="/assets/images/Logo.svg" alt="Logo" class="h-[31rem] px-8 md:px-0-" id="logo" /> -->
+				<WidgetTextTyping id="textTyping"/>
 
 				<!-- Scroll -->
 				<WidgetScroll id="scroll" class="absolute bottom-12" />
@@ -120,7 +121,10 @@ const { $gsap } = useNuxtApp();
 
 onMounted(() => {
 	//* Hero Section Animations
-	$gsap.fromTo("#logo", { opacity: 0, y: 200 }, { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+	// $gsap.fromTo("#logo", { opacity: 0, y: 200 }, { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+
+
+	$gsap.fromTo("#textTyping", { opacity: 0 }, { opacity: 1, duration: 1.5, ease: "power3.out" });
 
 	$gsap.fromTo(
 		"#scroll",
