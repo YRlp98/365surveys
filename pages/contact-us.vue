@@ -16,7 +16,7 @@
 
 					<div class="mt-16 flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center">
 						<!-- Left Side -->
-						<div class="space-y-8 md:w-1/2 flex flex-col justify-between">
+						<div id="left-side" class="space-y-8 md:w-1/2 flex flex-col justify-between">
 							<!-- Contact info -->
 							<div class="flex flex-col space-y-2">
 								<span><b>Email:</b> Ops@365surveys.co.uk</span>
@@ -28,7 +28,7 @@
 							<div class="bg-green-400 w-full h-[20rem] rounded-xl">Map</div>
 						</div>
 						<!-- Right Side -->
-						<div>
+						<div id="right-side">
 							<FormContactUs />
 						</div>
 					</div>
@@ -38,6 +38,24 @@
 	</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { $gsap } = useNuxtApp();
+
+onMounted(() => {
+	$gsap.fromTo(
+		"#page-title",
+		{ opacity: 0, x: -100 },
+		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo("#content", { opacity: 0, y: 100 }, { delay: 0.5, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+
+	$gsap.fromTo(
+		"#right-side",
+		{ opacity: 0, x: -100 },
+		{ delay: 1, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+	);
+});
+</script>
 
 <style scoped></style>
