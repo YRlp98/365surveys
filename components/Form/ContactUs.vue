@@ -53,10 +53,20 @@
 
 		<Button
 			type="submit"
-			class="btn relative flex items-center justify-center space-x-2 p-4 rounded-[12px] bg-primary shadow-lg cursor-pointer w-full"
+			class="button relative flex items-center justify-center space-x-2 p-4 rounded-[12px] bg-primary shadow-lg cursor-pointer w-full hover:bg-primary/90"
 		>
-			<span class="text text-white">Send Message</span>
-			<icon class="text-lg" name="iconamoon:send-fill" />
+			<span class="text-white">Send Message</span>
+			<icon class="icon text-lg" name="iconamoon:send-fill" />
 		</Button>
 	</form>
 </template>
+
+<style scoped>
+.button:hover .icon {
+	transform: translateX(2px);
+}
+
+.icon {
+	transition: transform 0.3s ease-in-out;
+}
+</style>
