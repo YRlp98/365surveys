@@ -1,6 +1,6 @@
 <template>
 	<form
-		action="https://submit-form.com/bKrcsIPYA"
+		action="https://submit-form.com/3xX4luF7h"
 		class="text-left relative min-w-[250px] max-w-[27rem] space-y-4 z-10 flex-1"
 	>
 		<div class="flex lg:flex-row justify-between gap-4">
