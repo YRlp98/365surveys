@@ -25,7 +25,18 @@
 							</div>
 
 							<!-- Map -->
-							<div class="bg-green-400 w-full h-[20rem] rounded-xl">Map</div>
+							<div class="w-full h-[20rem] rounded-xl border-8 border-gray-1 overflow-hidden">
+								<iframe
+									width="100%"
+									height="100%"
+									frameborder="0"
+									style="border: 0"
+									referrerpolicy="no-referrer-when-downgrade"
+									src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBcHlW15bEfF8oxmEQIzHuYRS_r8G-dGkE&q=Office+Suite+2,+Brickfield+Offices,+Wincanton+BA9+8EG,+United+Kingdom"
+									allowfullscreen
+								>
+								</iframe>
+							</div>
 						</div>
 						<!-- Right Side -->
 						<div id="right-side">
