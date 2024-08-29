@@ -90,7 +90,7 @@ onMounted(() => {
 		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
 	);
 
-	$gsap.fromTo("#content", { opacity: 0, y: 100 }, { delay: 0.5, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
+	$gsap.fromTo("#content", { opacity: 0 }, { delay: 0.75, opacity: 1, duration: 1.5, ease: "power3.out" });
 
 	// Cards Animation
 	// const cards = document.querySelectorAll(".card");
