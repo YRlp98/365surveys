@@ -123,7 +123,6 @@ onMounted(() => {
 	//* Hero Section Animations
 	// $gsap.fromTo("#logo", { opacity: 0, y: 200 }, { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
 
-
 	$gsap.fromTo("#textTyping", { opacity: 0 }, { opacity: 1, duration: 1.5, ease: "power3.out" });
 
 	$gsap.fromTo(
@@ -276,7 +275,7 @@ onMounted(() => {
 <style scoped>
 .hero-background {
 	background-image: linear-gradient(to bottom, rgba(30, 32, 35, 1), rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/git_test_bg.gif");
+		url("/assets/images/doc_2024-08-30_08-23-32.gif");
 	background-size: cover;
 	background-position: center;
 	position: relative;

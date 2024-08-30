@@ -31,7 +31,7 @@
 						class="h-[25rem]"
 						title="Journey Times"
 						description="Monitoring and analysis of driver behaviours using discrete methods and experienced experts"
-						image="stock3"
+						image="journeyTime"
 						link="#"
 					/>
 
