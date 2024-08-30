@@ -108,7 +108,7 @@
 						id="contact-button"
 						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-4"
 						text="Contact Us Form"
-						link="/case-studies"
+						link="/contact-us"
 					/>
 				</div>
 			</div>
