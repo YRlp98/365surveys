@@ -2,12 +2,12 @@
 	<div class="overflow-hidden">
 		<!-- Hero Section -->
 		<section class="custom-wrapper hero-background h-screen pt-16">
-			<div class="custom-container flex flex-col items-center justify-center">
-				<!-- Logo -->
-				<!-- <img src="/assets/images/Logo.svg" alt="Logo" class="h-[31rem] px-8 md:px-0-" id="logo" /> -->
-				<WidgetTextTyping id="textTyping"/>
-
-				<!-- Scroll -->
+			<video autoplay muted loop playsinline class="background-video">
+				<source src="/assets/videos/home-page-background.webm" type="video/webm" />
+				Your browser does not support the video tag.
+			</video>
+			<div class="custom-container flex flex-col items-center justify-center relative z-10">
+				<WidgetTextTyping id="textTyping" />
 				<WidgetScroll id="scroll" class="absolute bottom-12" />
 			</div>
 		</section>
@@ -274,10 +274,32 @@ onMounted(() => {
 
 <style scoped>
 .hero-background {
-	background-image: linear-gradient(to bottom, rgba(30, 32, 35, 1), rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/doc_2024-08-30_08-23-32.gif");
-	background-size: cover;
-	background-position: center;
 	position: relative;
+	overflow: hidden;
+}
+
+.background-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-background::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(30, 32, 35, 1), rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1));
+	z-index: 1;
+}
+
+.custom-container {
+	position: relative;
+	z-index: 10;
 }
 </style>
