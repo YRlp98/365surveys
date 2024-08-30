@@ -1,15 +1,15 @@
 <template>
 	<div class="flex items-center">
-		<!-- <div class="scroll-icon"></div> -->
-		<p>scroll down</p>
+		<div class="scroll-icon"></div>
+		<!-- <p>scroll down</p> -->
 	</div>
 </template>
 
 <style scoped>
 .scroll-icon {
 	position: relative;
-	width: 18px;
-	height: 24px;
+	width: 20px;
+	height: 28px;
 	box-shadow: inset 0 0 0 1px var(--gray-3);
 	border-radius: 25px;
 	display: flex;

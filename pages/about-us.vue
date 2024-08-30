@@ -32,9 +32,9 @@
 							</div>
 						</div>
 					</div>
+					<!-- Scroll -->
+					<WidgetScroll id="hero-scroll" class="absolute hidden md:block bottom-12" />
 				</div>
-				<!-- Scroll -->
-				<WidgetScroll id="hero-scroll" class="absolute hidden md:block bottom-12" />
 			</div>
 		</section>
 
@@ -129,8 +129,8 @@ onMounted(() => {
 
 	$gsap.fromTo(
 		"#hero-scroll",
-		{ opacity: 0, x: -100 },
-		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+		{ opacity: 0, y: -200 },
+		{ delay: 0.5, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" }
 	);
 	//* ==========================
 
