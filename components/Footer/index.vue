@@ -13,7 +13,7 @@
 			<div class="flex flex-1 h-20 items-center justify-center">
 				<div class="flex flex-col items-center h-full justify-between">
 					<WidgetSocialMedia class="" />
-					<div class="mt-2 text-base text-gray-3 text-center">Copyright © 2024 365 SURVEYS Ltd. All rights reserved.</div>
+					<div class="mt-2 text-base text-gray-3 text-center">Copyright © 2024 365 Surveys Ltd. All rights reserved.</div>
 				</div>
 			</div>
 		</div>
