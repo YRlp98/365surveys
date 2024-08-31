@@ -38,45 +38,39 @@
 							<!-- Client -->
 							<div class="space-y-2">
 								<h3 class="text-2xl font-bold">Client:</h3>
-								<p class="text-xl">Core Highways and Milestone Infrastructure</p>
+								<p class="text-xl">OCU Group and National Highways</p>
 							</div>
 
 							<!-- Summary -->
 							<div class="space-y-2">
 								<h3 class="text-2xl font-bold">Summary:</h3>
 								<p class="text-xl">
-									Production of CAD modelling, simulations and rendering for mechanical and civil applications.
+									The A303 Stonehenge project remains as one of the most complex and sensitive projects investigated in
+									the UK in recent history. Our experts supported the project construction team with highly detailed
+									data and analysis to inform strategic decision making
 								</p>
 							</div>
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2">
-							<img
-								class="rounded-xl"
-								src="/assets/images/case-studies/case-study-1-p1.jpg"
-								:alt="currentPage"
-							/>
+							<img class="rounded-xl" src="/assets/images/case-studies/case-study-2-p3.webp" :alt="currentPage" />
 						</div>
 					</div>
 
 					<div class="mt-20 space-y-8">
 						<p>
-							As part of the A382 Drumbridges to Newton Abbot scheme, 365 Surveys Ltd worked collaboratively with
-							Milestone infrastructure and Core Highways to define the most efficient construction strategy whilst
-							limiting the impact on the local community and environment. Analysisof carbon and pollutants data took
-							place to inform air quality and traffic models. This supported informed decision making throughout the
-							planning process.
+							During 2024, 365 Surveys Ltd supported National Highways/SSEN and OCU group through collection of detailed
+							traffic data to assist in the development of a traffic management impact assessment, our highly skilled
+							team worked in close collaboration with the construction team, National Highways and Wiltshire Council to
+							ensure robust data was collected in urban and rural locations with the upmost care taken on a sensitive
+							and emotive project.
 						</p>
 
-						<p>
-							As part of the A382 Drumbridges to Newton Abbot scheme, 365 Surveys Ltd worked collaboratively with
-							Milestone infrastructure and Core Highways to define the most efficient construction strategy whilst
-							limiting the impact on the local community and environment. Analysisof carbon and pollutants data took
-							place to inform air quality and traffic models. This supported informed decision making throughout the
-							planning process.
-						</p>
-
-						<img class="w-full rounded-xl" src="/assets/images/gif_test_2.gif" alt="" />
+						<img
+							class="w-full rounded-xl cursor-pointer"
+							src="/assets/images/case-studies/case-study-2-p1.webp"
+							alt="currentPage"
+						/>
 					</div>
 				</div>
 
@@ -160,7 +154,7 @@ onMounted(() => {
 <style scoped>
 .hero-background {
 	background-image: linear-gradient(to bottom, rgba(30, 32, 35, 1), rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/case-studies/case-study-1-p1.jpg");
+		url("/assets/images/case-studies/case-study-2-p3.webp");
 	background-size: cover;
 	background-position: center;
 	position: relative;
