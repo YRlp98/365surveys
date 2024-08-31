@@ -270,6 +270,31 @@ onMounted(() => {
 	});
 	//* ==========================
 });
+
+useSeoMeta({
+	description: "Traffic and transport data specialists",
+	ogTitle: "365 Surveys",
+	ogDescription: "Traffic and transport data specialists",
+	ogImage: "/logo.png",
+	ogUrl: "365Surveys.co.uk ",
+	twitterTitle: "365 Surveys",
+	twitterDescription: "Traffic and transport data specialists",
+	twitterImage: "/logo.png",
+	twitterCard: "Traffic and transport data specialists",
+});
+
+useHead({
+	htmlAttrs: {
+		lang: "en",
+	},
+	link: [
+		{
+			rel: "icon",
+			type: "image/png",
+			href: "/favicon.png",
+		},
+	],
+});
 </script>
 
 <style scoped>
