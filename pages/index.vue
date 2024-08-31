@@ -19,8 +19,8 @@
 				<h1 class="mt-6 stroked-text text-6xl font-bold uppercase">365<br />surveys</h1>
 				<div class="mt-6 flex flex-wrap gap-12 justify-center md:justify-between items-center">
 					<p class="text-gray-4 text-2xl font-normal w-full md:w-2/3">
-						365 surveys is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						ut labore et dolore magna aliqua.
+						We’re a multi-skilled team of experts from a safety consultancy and traffic management background who can
+						manage every step of your project’s traffic and transport data collection requirements.
 					</p>
 
 					<ButtonMoreRightArrow id="about-button" class="text-gray-4" text="Learn more about us" link="/about-us" />
@@ -273,11 +273,11 @@ onMounted(() => {
 
 useSeoMeta({
 	description: "Traffic and transport data specialists",
-	ogTitle: "365 Surveys",
+	ogTitle: "365 Surveys - Traffic and Transport Data Experts",
 	ogDescription: "Traffic and transport data specialists",
 	ogImage: "/logo.png",
-	ogUrl: "365Surveys.co.uk ",
-	twitterTitle: "365 Surveys",
+	ogUrl: "365Surveys.co.uk",
+	twitterTitle: "365 Surveys - Traffic Data Specialists",
 	twitterDescription: "Traffic and transport data specialists",
 	twitterImage: "/logo.png",
 	twitterCard: "Traffic and transport data specialists",

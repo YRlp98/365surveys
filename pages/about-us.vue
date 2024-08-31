@@ -20,8 +20,8 @@
 						<!-- Content -->
 						<div class="flex flex-col justify-between md:w-3/4 md:ml-8 h-[15rem]">
 							<p id="hero-text" class="text-xl text-gray-4">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua.
+								We’re a multi-skilled team of experts from a safety consultancy and traffic management background who
+								can manage every step of your project’s traffic and transport data collection requirements.
 							</p>
 
 							<!-- Counters -->
@@ -178,6 +178,42 @@ onMounted(() => {
 		ease: "power3.out",
 	});
 	//* ==========================
+});
+
+useSeoMeta({
+	description:
+		"We’re a multi-skilled team of traffic management and safety consultancy experts, handling every step of your project’s traffic and transport data collection needs.",
+	ogTitle: "365 Surveys - Expert Traffic and Transport Data Collection",
+	ogDescription:
+		"Meet 365 Surveys: A dedicated team of traffic management and safety consultants, managing your traffic and transport data collection from start to finish.",
+	ogImage: "/logo.png",
+	ogUrl: "365Surveys.co.uk/about-us",
+	twitterTitle: "365 Surveys - Your Traffic Data Experts",
+	twitterDescription:
+		"Discover how 365 Surveys' expert team can manage all your traffic and transport data collection needs.",
+	twitterImage: "/logo.png",
+	twitterCard: "365 Surveys - About Us Page",
+});
+
+useHead({
+	title: "365 Surveys - About Us",
+	meta: [
+		{
+			name: "description",
+			content:
+				"We’re a multi-skilled team of traffic management and safety consultancy experts, handling every step of your project’s traffic and transport data collection needs.",
+		},
+	],
+	htmlAttrs: {
+		lang: "en",
+	},
+	link: [
+		{
+			rel: "icon",
+			type: "image/png",
+			href: "/favicon.png",
+		},
+	],
 });
 </script>
 
