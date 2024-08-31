@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         { property: 'og:image', content: 'https://media.licdn.com/dms/image/C4E0BAQE40p4qe9z3zA/company-logo_200_200/0/1662882352622/fewzed_ltd_logo?e=1730937600&v=beta&t=4VZ8O9-p0DXD5EvtjmbTZvSP1FJhvV011t4FdbrgsHo' },
       ],
       link: [
-        // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap'
