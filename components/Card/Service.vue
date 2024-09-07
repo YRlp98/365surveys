@@ -26,6 +26,7 @@ import { computed, defineProps, onMounted } from "vue";
 import stock1 from "/assets/images/stock1.jpg";
 import stock2 from "/assets/images/stock2.jpg";
 import stock3 from "/assets/images/stock3.jpg";
+import TrafficCounts from "/assets/images/services/TrafficCounts.webp";
 import driverBehaviour from "/assets/images/services/driverBehaviour.jpg";
 import journeyTime from "/assets/images/services/journeyTime.webp";
 import droneSurveys from "/assets/images/services/droneSurveys.jpg";
@@ -45,6 +46,7 @@ const images = {
 	stock1,
 	stock2,
 	stock3,
+	TrafficCounts,
 	journeyTime,
 	driverBehaviour,
 	droneSurveys,

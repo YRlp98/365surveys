@@ -29,7 +29,7 @@
 					<div class="flex flex-col md:flex-row space-y-8 md:space-y-0 gap-8 justify-between items-start">
 						<!-- Left Side -->
 						<div class="md:w-1/2">
-							<img class="rounded-xl" src="/assets/images/services/turningCounts.jpg" alt="Traffic Counts" />
+							<img class="rounded-xl" src="/assets/images/services/TrafficCounts.webp" alt="Traffic Counts" />
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2">
@@ -132,7 +132,7 @@ onMounted(() => {
 <style scoped>
 .hero-background {
 	background-image: linear-gradient(to bottom, rgba(30, 32, 35, 1), rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/services/turningCounts.jpg");
+		url("/assets/images/services/TrafficCounts.webp");
 	background-size: cover;
 	background-position: center;
 	position: relative;
