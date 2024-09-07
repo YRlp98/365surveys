@@ -79,7 +79,7 @@
 							alt="currentPage"
 						/> -->
 
-						<div class="flex justify-between items-start gap-8">
+						<div class="flex justify-between items-start gap-8 h-full">
 							<!-- Left -->
 							<div class="w-1/2">
 								<img
@@ -89,8 +89,8 @@
 								/>
 							</div>
 							<!-- Right -->
-							<div class="flex flex-col justify-between space-y-8 flex-1">
-								<p>
+							<div class="flex flex-col justify-between flex-1 h-full pb-10">
+								<p class="flex-grow">
 									Our team also utilised our connected vehicle data platform to harvest detailed journey time and
 									vehicle speed data along key routes whilst the A360 was closed to facilitate crucial construction
 									activities. This data allowed OCU and National Highways to form a strong picture of how the road
@@ -98,7 +98,7 @@
 									on deploying countermeasures to minimise the impact of road closures.
 								</p>
 
-								<p>
+								<p class="flex-grow">
 									The A382 is the key road link between the A38 and the regional hub of Newton Abbott in Devon. Our team
 									collected detailed traffic data to support the development of traffic simulations and impact
 									assessments during the planning and assessment stages of the project
