@@ -66,11 +66,59 @@
 							and emotive project.
 						</p>
 
-						<img
+						<p>
+							Data collection was conducted using ATCs (Automatic Traffic Counters) at key locations and was
+							supplemented by radar where locations deemed a non-contact approach as more suitable. Our team were
+							responsible for planning the most suitable locations, managing the permit process and deploying and
+							removing survey equipment and reinstating the carriageway where required.
+						</p>
+
+						<!-- <img
 							class="w-full rounded-xl cursor-pointer"
 							src="/assets/images/case-studies/case-study-2-p1.webp"
 							alt="currentPage"
-						/>
+						/> -->
+
+						<div class="flex justify-between items-start gap-8">
+							<!-- Left -->
+							<div class="w-1/2">
+								<img
+									class="rounded-xl cursor-pointer"
+									src="/assets/images/case-studies/case-study-2-p1.webp"
+									alt="currentPage"
+								/>
+							</div>
+							<!-- Right -->
+							<div class="flex flex-col justify-between space-y-8 flex-1">
+								<p>
+									Our team also utilised our connected vehicle data platform to harvest detailed journey time and
+									vehicle speed data along key routes whilst the A360 was closed to facilitate crucial construction
+									activities. This data allowed OCU and National Highways to form a strong picture of how the road
+									closure was affecting traffic displacement and behaviours and to allow the team to proactively focus
+									on deploying countermeasures to minimise the impact of road closures.
+								</p>
+
+								<p>
+									The A382 is the key road link between the A38 and the regional hub of Newton Abbott in Devon. Our team
+									collected detailed traffic data to support the development of traffic simulations and impact
+									assessments during the planning and assessment stages of the project
+								</p>
+							</div>
+						</div>
+
+						<!-- <p>
+							Our team also utilised our connected vehicle data platform to harvest detailed journey time and vehicle
+							speed data along key routes whilst the A360 was closed to facilitate crucial construction activities. This
+							data allowed OCU and National Highways to form a strong picture of how the road closure was affecting
+							traffic displacement and behaviours and to allow the team to proactively focus on deploying
+							countermeasures to minimise the impact of road closures.
+						</p> -->
+
+						<!-- <p>
+							The A382 is the key road link between the A38 and the regional hub of Newton Abbott in Devon. Our team
+							collected detailed traffic data to support the development of traffic simulations and impact assessments
+							during the planning and assessment stages of the project
+						</p> -->
 					</div>
 				</div>
 
