@@ -4,10 +4,17 @@
 		<section class="custom-wrapper pt-32 pb-72">
 			<div class="custom-container flex flex-col">
 				<!-- Title -->
-				<div id="page-title" class="flex items-center text-gray-4 space-x-1.5 mb-8">
+				<div id="page-title" class="flex items-center text-gray-4 space-x-1.5">
 					<icon class="text-2xl" name="material-symbols:home-repair-service-outline-sharp" />
 					<h1 class="text-xl font-bold">Services</h1>
 				</div>
+
+				<p class="text-gray-4 text-xl mt-20">
+					We deliver a wide range of solutions to support and answer transportation challenges. We don’t just undertake
+					surveys (although we can), we deliver an end to end solution from defining problems or opportunities to
+					embedding solutions and monitoring how they perform. Our team are hugely experienced and offer a wide range of
+					services to support you. Take a look at what we offer.
+				</p>
 
 				<!-- Content Wrapper -->
 				<div id="content" class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-20">
