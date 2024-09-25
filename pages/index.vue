@@ -19,8 +19,8 @@
 				<h1 class="mt-6 stroked-text text-6xl font-bold uppercase">365<br />surveys</h1>
 				<div class="mt-6 flex flex-wrap gap-12 justify-center md:justify-between items-center">
 					<p class="text-gray-4 text-2xl font-normal w-full md:w-2/3">
-						We’re a multi-skilled team of experts from a safety consultancy and traffic management background who can
-						manage every step of your project’s traffic and transport data collection requirements.
+						365 SURVEYS specialises in transportation data, with expertise in operational data collection, monitoring,
+						and test plan development. Our team excels in transport and automotive data analytics.
 					</p>
 
 					<ButtonMoreRightArrow id="about-button" class="text-gray-4" text="Learn more about us" link="/about-us" />
@@ -40,8 +40,8 @@
 						</h2>
 
 						<p class="text-gray-4 text-2xl font-normal">
-							Explore our journey through real-world projects that highlight our expertise and dedication. Each case
-							study showcases how we've tackled unique challenges.
+							Offering end-to-end solutions for transportation challenges, from problem identification to solution
+							implementation and performance monitoring.
 						</p>
 					</div>
 

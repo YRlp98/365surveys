@@ -38,7 +38,7 @@
 			</NuxtLink>
 
 			<!-- Item 3 -->
-			<NuxtLink class="item item-3 flex flex-col" to="/about-us">
+			<NuxtLink class="item item-3 flex flex-col" to="#">
 				<!-- Content -->
 				<div
 					class="content file:z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5"
