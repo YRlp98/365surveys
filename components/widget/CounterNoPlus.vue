@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<h1 class="text-white text-5xl font-bold">{{ animatedFirstNumber }}/{{ animatedSecondNumber }}</h1>
+		<h1 class="text-white text-5xl font-bold">
+			{{ animatedFirstNumber }}<span class="text-primary">/</span>{{ animatedSecondNumber }}
+		</h1>
 		<span class="text-gray-4 text-lg font-thin">{{ title }}</span>
 	</div>
 </template>

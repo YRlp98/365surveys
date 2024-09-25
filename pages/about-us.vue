@@ -42,15 +42,15 @@
 			<div class="custom-container">
 				<!-- Content -->
 				<div class="flex flex-col space-y-[15rem]">
-					<!-- What is 365? -->
+					<!-- Who are 365 Surveys? -->
 					<div class="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center">
 						<!-- Left Side -->
 						<div class="space-y-8 md:w-1/2">
-							<h1 class="title text-gray-5 text-4xl font-bold">What is 365?!</h1>
+							<h1 class="title text-gray-5 text-4xl font-bold">Who are 365 Surveys?</h1>
 							<p class="text-gray-5 text-xl">
-								A multi-disciplinary team of designers, engineers and consultants specialising in technical support and
-								development for projects in the highways, transport and construction industries. Based in the South West
-								of England but covering Nationwide and Europe we are available to support your projects.
+								We are a business of transportation data specialists with a wide experience of operational data
+								collection and monitoring and our team includes specialists in defining test plans and data analytics
+								originating in transport and automotive test and analysis.
 							</p>
 						</div>
 						<!-- Right Side -->
@@ -72,9 +72,8 @@
 						<div class="md:w-1/2 space-y-8">
 							<h1 class="text-white text-4xl font-bold">Quality Assurance</h1>
 							<p class="text-gray-5 text-xl">
-								A multi-disciplinary team of designers, engineers and consultants specialising in technical support and
-								development for projects in the highways, transport and construction industries. Based in the South West
-								of England but covering Nationwide and Europe we are available to support your projects.
+								Our QA processes start from day one with an assurance assessment on data quality and requirements and is
+								led through to delivery and assured by Dr Ryan Wood.
 							</p>
 						</div>
 
@@ -89,9 +88,9 @@
 						<div class="space-y-8 md:w-1/2">
 							<h1 class="text-white text-4xl font-bold">Data security</h1>
 							<p class="text-gray-5 text-xl">
-								A multi-disciplinary team of designers, engineers and consultants specialising in technical support and
-								development for projects in the highways, transport and construction industries. Based in the South West
-								of England but covering Nationwide and Europe we are available to support your projects.
+								We work with you to manage and comply with all data security requirements and standards. Our partner
+								company of software developers ensures the robustness and security of our systems to international
+								standards
 							</p>
 						</div>
 						<!-- Right Side -->
