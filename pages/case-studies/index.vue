@@ -4,10 +4,17 @@
 		<section class="custom-wrapper flex-1 pt-32 pb-20">
 			<div class="custom-container flex flex-col">
 				<!-- Title -->
-				<div id="page-title" class="flex items-center text-gray-4 space-x-1.5 mb-8">
+				<div id="page-title" class="flex items-center text-gray-4 space-x-1.5">
 					<icon class="text-2xl" name="hugeicons:study-lamp" />
 					<h1 class="text-xl font-bold">Case Studies</h1>
 				</div>
+
+				<p class="text-gray-4 text-xl mt-20">
+					Explore our journey through real-world projects that highlight our expertise and dedication. Each case study
+					showcases how we've tackled unique challenges, delivered tailored solutions, and driven success for our
+					clients. From initial strategy to final implementation, discover the impact of our work and the stories behind
+					the results.
+				</p>
 
 				<!-- Content Wrapper -->
 				<div id="content" class="pt-20 flex-1">
