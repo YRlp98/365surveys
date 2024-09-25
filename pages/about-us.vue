@@ -43,7 +43,7 @@
 				<!-- Content -->
 				<div class="flex flex-col space-y-[15rem]">
 					<!-- Who are 365 Surveys? -->
-					<div class="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center">
+					<div class="flex flex-col md:flex-row space-y-8 md:space-x-8 md:space-y-0 justify-between items-center">
 						<!-- Left Side -->
 						<div class="space-y-8 md:w-1/2">
 							<h1 class="title text-gray-5 text-4xl font-bold">Who are 365 Surveys?</h1>
@@ -55,18 +55,26 @@
 						</div>
 						<!-- Right Side -->
 						<div>
-							<img class="w-full" src="/assets/images/whatUs365.svg" alt="" />
+							<!-- <img class="w-full" src="/assets/images/whatUs365.svg" alt="" /> -->
+							<video autoplay muted loop playsinline class="w-[37rem] rounded-xl">
+								<source src="/assets/videos/who_are_365_surveys.webm" type="video/webm" />
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 
 					<!-- Quality Assurance -->
 					<div
 						id="quality-section"
-						class="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center"
+						class="flex flex-col md:flex-row space-y-8 md:space-x-8 md:space-y-0 justify-between items-center"
 					>
 						<!-- Left Side -->
 						<div class="hidden md:block">
-							<img class="w-full" src="/assets/images/QualityAssurance.svg" alt="" />
+							<!-- <img class="w-full" src="/assets/images/QualityAssurance.svg" alt="" /> -->
+							<video autoplay muted loop playsinline class="w-[37rem] rounded-xl">
+								<source src="/assets/videos/quality_assurance.webm" type="video/webm" />
+								Your browser does not support the video tag.
+							</video>
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2 space-y-8">
@@ -78,12 +86,19 @@
 						</div>
 
 						<div class="space-y-8 md:hidden">
-							<img class="w-full" src="/assets/images/QualityAssurance.svg" alt="" />
+							<!-- <img class="w-full" src="/assets/images/QualityAssurance.svg" alt="" /> -->
+							<video autoplay muted loop playsinline class="w-[37rem] rounded-xl">
+								<source src="/assets/videos/quality_assurance.webm" type="video/webm" />
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 
 					<!-- Data security -->
-					<div id="data-section" class="flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center">
+					<div
+						id="data-section"
+						class="flex flex-col md:flex-row space-y-8 md:space-x-8 md:space-y-0 justify-between items-center"
+					>
 						<!-- Left Side -->
 						<div class="space-y-8 md:w-1/2">
 							<h1 class="text-white text-4xl font-bold">Data security</h1>
@@ -95,7 +110,11 @@
 						</div>
 						<!-- Right Side -->
 						<div>
-							<img class="w-full" src="/assets/images/DataSecurity.svg" alt="" />
+							<!-- <img class="w-full" src="/assets/images/DataSecurity.svg" alt="" /> -->
+							<video autoplay muted loop playsinline class="w-[37rem] rounded-xl">
+								<source src="/assets/videos/data_security.webm" type="video/webm" />
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 				</div>
