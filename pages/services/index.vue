@@ -120,6 +120,50 @@ onMounted(() => {
 	// 	);
 	// });
 });
+
+useSeoMeta({
+	description:
+		"Explore a wide range of transportation services including traffic counts, driver behavior analysis, journey times, and drone surveys. 365 Surveys offers expert solutions for all your transport data needs.",
+	ogTitle: "365 Surveys - Our Services",
+	ogDescription:
+		"Discover our expert transport data services, from traffic counts to public transport analysis. 365 Surveys provides comprehensive solutions for transportation challenges.",
+	ogImage: "https://365Surveys.co.uk/logo.png",
+	ogUrl: "https://365Surveys.co.uk/services",
+	twitterTitle: "365 Surveys - Services",
+	twitterDescription:
+		"365 Surveys offers a variety of transportation data services, including traffic counts, driver behavior, drone surveys, and more.",
+	twitterImage: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "https://365Surveys.co.uk/logo.png",
+});
+
+useHead({
+	title: "365 Surveys - Services",
+	meta: [
+		{
+			name: "description",
+			content:
+				"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+		},
+		{
+			name: "viewport",
+			content: "width=device-width, initial-scale=1.0",
+		},
+		{
+			name: "robots",
+			content: "index, follow",
+		},
+	],
+	htmlAttrs: {
+		lang: "en",
+	},
+	link: [
+		{
+			rel: "icon",
+			type: "image/png",
+			href: "/favicon.png",
+		},
+	],
+});
 </script>
 
 <style scoped></style>

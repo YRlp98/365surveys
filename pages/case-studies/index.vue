@@ -37,6 +37,50 @@ onMounted(() => {
 
 	$gsap.fromTo("#content", { opacity: 0, y: 100 }, { delay: 0.5, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
 });
+
+useSeoMeta({
+	description:
+		"Explore our real-world case studies that showcase how 365 Surveys solved transportation challenges with tailored data solutions and expert analysis.",
+	ogTitle: "365 Surveys - Case Studies",
+	ogDescription:
+		"Discover real-world projects where 365 Surveys provided expert transportation data solutions. Learn how we've tackled complex challenges and driven success for our clients.",
+	ogImage: "https://365Surveys.co.uk/logo.png",
+	ogUrl: "https://365Surveys.co.uk/case-studies",
+	twitterTitle: "365 Surveys - Case Studies",
+	twitterDescription:
+		"Explore our case studies showcasing transportation solutions, expert analysis, and success stories. Learn how we've helped clients with unique challenges.",
+	twitterImage: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "https://365Surveys.co.uk/logo.png",
+});
+
+useHead({
+	title: "365 Surveys - Case Studies",
+	meta: [
+		{
+			name: "description",
+			content:
+				"365 Surveys presents real-world case studies highlighting tailored data solutions, expert transportation analysis, and success stories.",
+		},
+		{
+			name: "viewport",
+			content: "width=device-width, initial-scale=1.0",
+		},
+		{
+			name: "robots",
+			content: "index, follow",
+		},
+	],
+	htmlAttrs: {
+		lang: "en",
+	},
+	link: [
+		{
+			rel: "icon",
+			type: "image/png",
+			href: "/favicon.png",
+		},
+	],
+});
 </script>
 
 <style scoped></style>

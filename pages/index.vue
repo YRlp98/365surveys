@@ -272,15 +272,15 @@ onMounted(() => {
 });
 
 useSeoMeta({
-	description: "Traffic and transport data specialists",
-	ogTitle: "365 Surveys - Traffic and Transport Data Experts",
-	ogDescription: "Traffic and transport data specialists",
+	description: "Specialises in transportation data",
+	ogTitle: "365 Surveys -  Specialises in transportation data",
+	ogDescription: " Specialises in transportation data",
 	ogImage: "/logo.png",
 	ogUrl: "365Surveys.co.uk",
-	twitterTitle: "365 Surveys - Traffic Data Specialists",
-	twitterDescription: "Traffic and transport data specialists",
+	twitterTitle: "365 Surveys - Specialises in transportation data",
+	twitterDescription: "Specialises in transportation data",
 	twitterImage: "/logo.png",
-	twitterCard: "Traffic and transport data specialists",
+	twitterCard: "https://365Surveys.co.uk/logo.png",
 });
 
 useHead({

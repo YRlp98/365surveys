@@ -67,6 +67,50 @@ onMounted(() => {
 		{ delay: 1, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
 	);
 });
+
+useSeoMeta({
+	description:
+		"Contact 365 Surveys for all inquiries related to our transportation data solutions. Reach us via phone, email, or our contact form and we’ll get back to you soon.",
+	ogTitle: "Contact 365 Surveys | Reach Out for Transportation Data Solutions",
+	ogDescription:
+		"Have questions or need assistance? Contact 365 Surveys by phone, email, or our contact form. We're here to help with all your transportation data needs.",
+	ogImage: "https://365Surveys.co.uk/logo.png",
+	ogUrl: "https://365Surveys.co.uk/contact-us",
+	twitterTitle: "Contact 365 Surveys - We're Here to Help",
+	twitterDescription:
+		"Need support or have questions? Contact 365 Surveys for all inquiries related to transportation data solutions.",
+	twitterImage: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "https://365Surveys.co.uk/logo.png",
+});
+
+useHead({
+	title: "365 Surveys - Contact Us",
+	meta: [
+		{
+			name: "description",
+			content:
+				"Get in touch with 365 Surveys. Reach us via phone, email, or our contact form for any inquiries related to transportation data solutions.",
+		},
+		{
+			name: "viewport",
+			content: "width=device-width, initial-scale=1.0",
+		},
+		{
+			name: "robots",
+			content: "index, follow",
+		},
+	],
+	htmlAttrs: {
+		lang: "en",
+	},
+	link: [
+		{
+			rel: "icon",
+			type: "image/png",
+			href: "/favicon.png",
+		},
+	],
+});
 </script>
 
 <style scoped></style>

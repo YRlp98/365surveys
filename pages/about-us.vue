@@ -199,17 +199,17 @@ onMounted(() => {
 
 useSeoMeta({
 	description:
-		"We’re a multi-skilled team of traffic management and safety consultancy experts, handling every step of your project’s traffic and transport data collection needs.",
-	ogTitle: "365 Surveys - Expert Traffic and Transport Data Collection",
+		"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+	ogTitle: "365 Surveys - About Us",
 	ogDescription:
-		"Meet 365 Surveys: A dedicated team of traffic management and safety consultants, managing your traffic and transport data collection from start to finish.",
-	ogImage: "/logo.png",
-	ogUrl: "365Surveys.co.uk/about-us",
-	twitterTitle: "365 Surveys - Your Traffic Data Experts",
+		"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+	ogImage: "https://365Surveys.co.uk/logo.png",
+	ogUrl: "https://365Surveys.co.uk/about-us",
+	twitterTitle: "365 SURVEYS",
 	twitterDescription:
-		"Discover how 365 Surveys' expert team can manage all your traffic and transport data collection needs.",
-	twitterImage: "/logo.png",
-	twitterCard: "365 Surveys - About Us Page",
+		"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+	twitterImage: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "https://365Surveys.co.uk/logo.png",
 });
 
 useHead({
@@ -218,7 +218,7 @@ useHead({
 		{
 			name: "description",
 			content:
-				"We’re a multi-skilled team of traffic management and safety consultancy experts, handling every step of your project’s traffic and transport data collection needs.",
+				"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
 		},
 	],
 	htmlAttrs: {
