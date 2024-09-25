@@ -20,15 +20,14 @@
 						<!-- Content -->
 						<div class="flex flex-col justify-between md:w-3/4 md:ml-8 h-[15rem]">
 							<p id="hero-text" class="text-xl text-gray-4">
-								We’re a multi-skilled team of experts from a safety consultancy and traffic management background who
-								can manage every step of your project’s traffic and transport data collection requirements.
+								365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.
 							</p>
 
 							<!-- Counters -->
-							<div id="hero-counters" class="flex flex-wrap gap-4 mt-8 md:mt-12 pb-12 md:pb-0">
-								<WidgetCounter number="10" title="Years Experiences" />
-								<WidgetCounter number="22" title="Happy Customers" />
-								<WidgetCounter number="06" title="Upcoming Projects" />
+							<div id="hero-counters" class="flex flex-wrap gap-16 mt-8 md:mt-12 pb-12 md:pb-0">
+								<WidgetCounterWithPlus number="30" title="Years Experiences" />
+								<WidgetCounterWithPlus number="3" title="Locations" />
+								<WidgetCounterNoPlus firstNumber="24" secondNumber="7" title="Services" />
 							</div>
 						</div>
 					</div>
