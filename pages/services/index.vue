@@ -9,7 +9,7 @@
 					<h1 class="text-xl font-bold">Services</h1>
 				</div>
 
-				<p class="text-gray-4 text-xl mt-20">
+				<p id="description" class="text-gray-4 text-xl mt-20">
 					We deliver a wide range of solutions to support and answer transportation challenges. We don’t just undertake
 					surveys (although we can), we deliver an end to end solution from defining problems or opportunities to
 					embedding solutions and monitoring how they perform. Our team are hugely experienced and offer a wide range of
@@ -97,7 +97,13 @@ onMounted(() => {
 		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
 	);
 
-	$gsap.fromTo("#content", { opacity: 0 }, { delay: 0.75, opacity: 1, duration: 1.5, ease: "power3.out" });
+	$gsap.fromTo(
+		"#description",
+		{ opacity: 0, y: -50 },
+		{ delay: 0.5, opacity: 1, y: 0, duration: 1.75, ease: "power3.out" }
+	);
+
+	$gsap.fromTo("#content", { opacity: 0 }, { delay: 0.5, opacity: 1, duration: 1.5, ease: "power3.out" });
 
 	// Cards Animation
 	// const cards = document.querySelectorAll(".card");
@@ -141,8 +147,7 @@ useHead({
 	meta: [
 		{
 			name: "description",
-			content:
-				"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+			content: "365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
 		},
 		{
 			name: "viewport",

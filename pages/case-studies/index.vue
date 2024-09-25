@@ -9,7 +9,7 @@
 					<h1 class="text-xl font-bold">Case Studies</h1>
 				</div>
 
-				<p class="text-gray-4 text-xl mt-20">
+				<p id="description" class="text-gray-4 text-xl mt-20">
 					Explore our journey through real-world projects that highlight our expertise and dedication. Each case study
 					showcases how we've tackled unique challenges, delivered tailored solutions, and driven success for our
 					clients. From initial strategy to final implementation, discover the impact of our work and the stories behind
@@ -33,6 +33,12 @@ onMounted(() => {
 		"#page-title",
 		{ opacity: 0, x: -100 },
 		{ delay: 0.5, opacity: 1, x: 0, duration: 1.5, ease: "power3.out" }
+	);
+
+	$gsap.fromTo(
+		"#description",
+		{ opacity: 0, y: -50 },
+		{ delay: 0.5, opacity: 1, y: 0, duration: 1.75, ease: "power3.out" }
 	);
 
 	$gsap.fromTo("#content", { opacity: 0, y: 100 }, { delay: 0.5, opacity: 1, y: 0, duration: 1.5, ease: "power3.out" });
