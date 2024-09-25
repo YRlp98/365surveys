@@ -15,7 +15,7 @@
 						class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0 mb-[15%]"
 					>
 						<!-- Logo -->
-						<img id="hero-logo" src="/assets/images/Logo.svg" alt="Logo" class="h-[15rem]" />
+						<img id="hero-logo" src="/assets/images/logo.svg" alt="Logo" class="h-[15rem]" />
 
 						<!-- Content -->
 						<div class="flex flex-col justify-between md:w-3/4 md:ml-8 h-[15rem]">
