@@ -27,15 +27,14 @@
 							<!-- Map -->
 							<div class="w-full h-[20rem] rounded-xl border-8 border-gray-1 overflow-hidden">
 								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4151.8359339383915!2d-2.4661956224698938!3d51.03940009478314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOffice%20Suite%202%2C%20Brickfield%20Offices%2C%20Wincanton%20BA9%208EG%2C%20United%20Kingdom!5e1!3m2!1sen!2sde!4v1732709127003!5m2!1sen!2sde"
 									width="100%"
 									height="100%"
-									frameborder="0"
 									style="border: 0"
+									allowfullscreen=""
+									loading="lazy"
 									referrerpolicy="no-referrer-when-downgrade"
-									src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBcHlW15bEfF8oxmEQIzHuYRS_r8G-dGkE&q=Office+Suite+2,+Brickfield+Offices,+Wincanton+BA9+8EG,+United+Kingdom"
-									allowfullscreen
-								>
-								</iframe>
+								></iframe>
 							</div>
 						</div>
 						<!-- Right Side -->
