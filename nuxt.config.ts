@@ -8,11 +8,6 @@ export default defineNuxtConfig({
   // Enable server-side rendering
   ssr: true,
 
-  // Server configuration
-  devServer: {
-    port: 3001
-  },
-
   // Global page transition
   app: {
     head: {
