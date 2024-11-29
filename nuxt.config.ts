@@ -46,7 +46,7 @@ export default defineNuxtConfig({
 
   // Site maps
   sitemap: {
-    hostname: 'https://www.365 Surveys.co.uk',
+    hostname: 'https://www.365Surveys.co.uk',
     routes: [
       '/',
     ],
