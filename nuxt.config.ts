@@ -9,9 +9,8 @@ export default defineNuxtConfig({
   ssr: true,
 
   // Server configuration
-  server: {
-    port: 3001,
-    host: '0.0.0.0',
+  devServer: {
+    port: 3001
   },
 
   // Global page transition
