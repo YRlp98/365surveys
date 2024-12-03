@@ -29,7 +29,7 @@
 		</section>
 
 		<!-- Section 2: Services -->
-		<section class="custom-wrapper py-[8rem] bg-black-1">
+		<section class="custom-wrapper pt-6 pb-[11rem] bg-black-1">
 			<div id="services-section" class="custom-container">
 				<div class="flex flex-col space-y-40 md:flex-row md:space-y-0 items-center h-full">
 					<!-- Left side -->
