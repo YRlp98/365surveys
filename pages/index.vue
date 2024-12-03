@@ -35,11 +35,11 @@
 					<!-- Left side -->
 					<div class="flex flex-col justify-between w-full md:w-1/2 h-[20rem]">
 						<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">
-							Our Services,<br />
+							<span class="text-primary text-3xl">Our Services,</span><br />
 							Your Solutions
 						</h2>
 
-						<p class="text-gray-4 text-2xl font-normal">
+						<p class="text-gray-4 text-xl font-normal">
 							Offering end-to-end solutions for transportation challenges, from problem identification to solution
 							implementation and performance monitoring.
 						</p>
