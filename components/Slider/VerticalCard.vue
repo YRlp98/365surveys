@@ -27,13 +27,13 @@ const slides = [
 	},
 	{
 		title: "Traffic Counts",
-		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
-		image: "stock1",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications",
+		image: "TrafficCounts",
 	},
 	{
-		title: "Traffic Speed",
-		description: "Automated and manual data collection using radar and laser technology",
-		image: "trafficSpeed",
+		title: "Driver behaviour",
+		description: "Monitoring and analysis of driver behaviours using discrete methods and experienced experts",
+		image: "driverBehaviour",
 	},
 ];
 
