@@ -25,9 +25,9 @@
 
 							<!-- Counters -->
 							<div id="hero-counters" class="flex flex-wrap gap-16 mt-8 md:mt-12 pb-12 md:pb-0">
-								<WidgetCounterWithPlus number="30" title="Years Experiences" />
-								<WidgetCounterWithPlus number="3" title="Locations" />
-								<WidgetCounterNoPlus firstNumber="24" secondNumber="7" title="Services" />
+								<WidgetCounter type="plus" :number="30" title="Years Experiences" />
+								<WidgetCounter type="plain" :number="3" title="Locations" />
+								<WidgetCounter type="fraction" :firstNumber="24" :secondNumber="7" title="Services" />
 							</div>
 						</div>
 					</div>
@@ -198,8 +198,7 @@ onMounted(() => {
 });
 
 useSeoMeta({
-	description:
-		"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+	description: "365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
 	ogTitle: "365 Surveys - About Us",
 	ogDescription:
 		"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
@@ -217,8 +216,7 @@ useHead({
 	meta: [
 		{
 			name: "description",
-			content:
-				"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+			content: "365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
 		},
 	],
 	htmlAttrs: {
