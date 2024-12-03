@@ -19,7 +19,7 @@
 				<h1 class="mt-6 stroked-text text-6xl font-bold uppercase">365<br />surveys</h1>
 				<div class="mt-6 flex flex-wrap gap-12 justify-center md:justify-between items-center">
 					<p class="text-gray-4 text-2xl font-normal w-full md:w-2/3">
-						365 SURVEYS specialises in transportation data, with expertise in operational data collection, monitoring,
+						365 SURVEYS specialists in transportation data, with expertise in operational data collection, monitoring,
 						and test plan development. Our team excels in transport and automotive data analytics.
 					</p>
 
@@ -272,13 +272,13 @@ onMounted(() => {
 });
 
 useSeoMeta({
-	description: "Specialises in transportation data",
-	ogTitle: "365 Surveys -  Specialises in transportation data",
-	ogDescription: " Specialises in transportation data",
+	description: "specialists in transportation data",
+	ogTitle: "365 Surveys -  specialists in transportation data",
+	ogDescription: " specialists in transportation data",
 	ogImage: "/logo.png",
 	ogUrl: "365Surveys.co.uk",
-	twitterTitle: "365 Surveys - Specialises in transportation data",
-	twitterDescription: "Specialises in transportation data",
+	twitterTitle: "365 Surveys - specialists in transportation data",
+	twitterDescription: "specialists in transportation data",
 	twitterImage: "/logo.png",
 	twitterCard: "https://365Surveys.co.uk/logo.png",
 });

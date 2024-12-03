@@ -20,7 +20,7 @@
 						<!-- Content -->
 						<div class="flex flex-col justify-between md:w-3/4 md:ml-8 h-[15rem]">
 							<p id="hero-text" class="text-xl text-gray-4">
-								365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.
+								365 SURVEYS specialists in transport data, from collection and monitoring to test plans and analytics.
 							</p>
 
 							<!-- Counters -->
@@ -198,15 +198,15 @@ onMounted(() => {
 });
 
 useSeoMeta({
-	description: "365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+	description: "365 SURVEYS specialists in transport data, from collection and monitoring to test plans and analytics.",
 	ogTitle: "365 Surveys - About Us",
 	ogDescription:
-		"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+		"365 SURVEYS specialists in transport data, from collection and monitoring to test plans and analytics.",
 	ogImage: "https://365Surveys.co.uk/logo.png",
 	ogUrl: "https://365Surveys.co.uk/about-us",
 	twitterTitle: "365 SURVEYS",
 	twitterDescription:
-		"365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+		"365 SURVEYS specialists in transport data, from collection and monitoring to test plans and analytics.",
 	twitterImage: "https://365Surveys.co.uk/logo.png",
 	twitterCard: "https://365Surveys.co.uk/logo.png",
 });
@@ -216,7 +216,7 @@ useHead({
 	meta: [
 		{
 			name: "description",
-			content: "365 SURVEYS specialises in transport data, from collection and monitoring to test plans and analytics.",
+			content: "365 SURVEYS specialists in transport data, from collection and monitoring to test plans and analytics.",
 		},
 	],
 	htmlAttrs: {
