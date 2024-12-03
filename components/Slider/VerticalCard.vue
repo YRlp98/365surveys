@@ -12,6 +12,8 @@
 			class="slide cursor-pointer transition-opacity duration-700 ease-out"
 			:class="{ 'slide--active': currentIndex === index, prev: prevIndex === index, next: nextIndex === index }"
 			@click="setActiveSlide(index)"
+			@mouseover="onHover"
+			@mouseleave="onHoverLeave"
 		/>
 	</div>
 </template>
@@ -38,12 +40,14 @@ const slides = [
 ];
 
 const currentIndex = ref(0);
+const intervalId = ref(null);
 
 const prevIndex = computed(() => (currentIndex.value - 1 + slides.length) % slides.length);
 const nextIndex = computed(() => (currentIndex.value + 1) % slides.length);
 
 const setActiveSlide = (index) => {
 	currentIndex.value = index;
+	resetTimer();
 	updateSlides();
 };
 
@@ -63,8 +67,40 @@ const updateSlides = () => {
 	});
 };
 
+const startTimer = () => {
+	intervalId.value = setInterval(() => {
+		currentIndex.value = (currentIndex.value + 1) % slides.length;
+		updateSlides();
+	}, 8000);
+};
+
+const stopTimer = () => {
+	if (intervalId.value) {
+		clearInterval(intervalId.value);
+		intervalId.value = null;
+	}
+};
+
+const resetTimer = () => {
+	stopTimer();
+	startTimer();
+};
+
+const onHover = () => {
+	stopTimer();
+};
+
+const onHoverLeave = () => {
+	startTimer();
+};
+
 onMounted(() => {
 	updateSlides();
+	startTimer();
+});
+
+onUnmounted(() => {
+	if (intervalId) clearInterval(intervalId);
 });
 </script>
 
