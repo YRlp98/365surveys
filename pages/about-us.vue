@@ -32,7 +32,11 @@
 						</div>
 					</div>
 					<!-- Scroll -->
-					<WidgetScroll id="hero-scroll" class="absolute hidden md:block bottom-12" />
+					<WidgetScroll
+						id="scroll"
+						class="absolute bottom-12 cursor-pointer"
+						@click="scrollToSection('what-section')"
+					/>
 				</div>
 			</div>
 		</section>
@@ -125,6 +129,20 @@
 
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
+
+function scrollToSection(sectionId: string) {
+	const section = document.getElementById(sectionId);
+	if (section) {
+		const sectionTop = section.getBoundingClientRect().top;
+
+		const offset = window.scrollY + sectionTop - window.innerHeight * 0.25; // 75%
+
+		window.scrollTo({
+			top: offset,
+			behavior: "smooth",
+		});
+	}
+}
 
 onMounted(() => {
 	//* Hero Section Animations

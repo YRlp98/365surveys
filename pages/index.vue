@@ -8,7 +8,7 @@
 			</video>
 			<div class="custom-container flex flex-col items-center justify-center relative z-10">
 				<WidgetTextTyping id="textTyping" />
-				<WidgetScroll id="scroll" class="absolute bottom-12" />
+				<WidgetScroll id="scroll" class="absolute bottom-12 cursor-pointer" @click="scrollToSection('about-section')" />
 			</div>
 		</section>
 
@@ -118,6 +118,20 @@
 
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
+
+function scrollToSection(sectionId: string) {
+	const section = document.getElementById(sectionId);
+	if (section) {
+		const sectionTop = section.getBoundingClientRect().top;
+
+		const offset = window.scrollY + sectionTop - window.innerHeight * 0.35; // 65%
+
+		window.scrollTo({
+			top: offset,
+			behavior: "smooth",
+		});
+	}
+}
 
 onMounted(() => {
 	//* Hero Section Animations

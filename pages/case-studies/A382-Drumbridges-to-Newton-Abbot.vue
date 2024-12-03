@@ -15,7 +15,11 @@
 					<h1 id="hero-title" class="text-gray-5 text-5xl font-bold">{{ currentPage }}</h1>
 
 					<!-- Scroll -->
-					<WidgetScroll id="hero-scroll" class="absolute bottom-12" />
+					<WidgetScroll
+						id="scroll"
+						class="absolute bottom-12 cursor-pointer"
+						@click="scrollToSection('content-section')"
+					/>
 				</div>
 			</div>
 		</section>
@@ -51,11 +55,7 @@
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2">
-							<img
-								class="rounded-xl"
-								src="/assets/images/case-studies/case-study-1-p1.jpg"
-								:alt="currentPage"
-							/>
+							<img class="rounded-xl" src="/assets/images/case-studies/case-study-1-p1.jpg" :alt="currentPage" />
 						</div>
 					</div>
 
@@ -100,6 +100,20 @@ const currentPage = computed(() => {
 	const pageTitle = routeName.split("-").slice(2).join(" ");
 	return pageTitle ? pageTitle.replace(/-/g, " ") : "Page";
 });
+
+function scrollToSection(sectionId: string) {
+	const section = document.getElementById(sectionId);
+	if (section) {
+		const sectionTop = section.getBoundingClientRect().top;
+
+		const offset = window.scrollY + sectionTop - window.innerHeight * 0.35; // 65%
+
+		window.scrollTo({
+			top: offset,
+			behavior: "smooth",
+		});
+	}
+}
 
 onMounted(() => {
 	//* Hero section animations
