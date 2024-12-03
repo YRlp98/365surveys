@@ -34,7 +34,7 @@
 				<div class="flex flex-col space-y-40 md:flex-row md:space-y-0 items-center h-full">
 					<!-- Left side -->
 					<div class="flex flex-col justify-between w-full md:w-1/2 h-[20rem]">
-						<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">
+						<h2 class="text-xl font-light tracking-widest leading-8 text-gray-4">
 							<span class="text-primary text-3xl">Our Services,</span><br />
 							Your Solutions
 						</h2>
@@ -53,7 +53,7 @@
 
 				<ButtonMoreRightArrow
 					id="services-button"
-					class="mt-16 justify-center md:justify-end text-gray-4"
+					class="mt-16 justify-center md:justify-end text-gray-5"
 					text="Explore Our Services"
 					link="/services"
 				/>
@@ -63,9 +63,14 @@
 		<!-- Section 3: Case Studies -->
 		<section class="custom-wrapper py-[11rem] bg-black-3">
 			<div id="case-section" class="custom-container">
-				<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">Case Studies</h2>
+				<!-- <h2 class="text-3xl font-light tracking-widest leading-10 text-gray-5">Case Studies</h2> -->
 
-				<p class="text-gray-4 text-2xl font-normal mt-12">
+				<h2 class="text-xl font-light tracking-widest leading-8 text-gray-4">
+					<span class="text-primary text-3xl">Case Studies</span><br />
+					Recent Projects
+				</h2>
+
+				<p class="text-gray-4 text-xl font-normal mt-12">
 					Explore our journey through real-world projects that highlight our expertise and dedication. Each case study
 					showcases how we've tackled unique challenges, delivered tailored solutions, and driven success for our
 					clients. From initial strategy to final implementation, discover the impact of our work and the stories behind
@@ -78,7 +83,7 @@
 
 					<ButtonMoreRightArrow
 						id="case-button"
-						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-4"
+						class="mt-16 md:mt-0 justify-center md:justify-end text-gray-5"
 						text="Browse All Case Studies"
 						link="/case-studies"
 					/>
