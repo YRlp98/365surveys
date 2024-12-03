@@ -13,7 +13,7 @@
 		</section>
 
 		<!-- Section 1: About -->
-		<section class="custom-wrapper py-[11.125rem] bg-black-3">
+		<section class="custom-wrapper py-[11rem] bg-black-3">
 			<div id="about-section" class="custom-container">
 				<h2 class="text-xl font-light tracking-widest text-gray-5">About</h2>
 				<h1 class="mt-6 stroked-text text-6xl font-bold uppercase">365<br />surveys</h1>
@@ -29,7 +29,7 @@
 		</section>
 
 		<!-- Section 2: Services -->
-		<section class="custom-wrapper py-[11.125rem] bg-black-1">
+		<section class="custom-wrapper py-[8rem] bg-black-1">
 			<div id="services-section" class="custom-container">
 				<div class="flex flex-col space-y-40 md:flex-row md:space-y-0 items-center h-full">
 					<!-- Left side -->
@@ -61,7 +61,7 @@
 		</section>
 
 		<!-- Section 3: Case Studies -->
-		<section class="custom-wrapper py-[11.125rem] bg-black-3">
+		<section class="custom-wrapper py-[11rem] bg-black-3">
 			<div id="case-section" class="custom-container">
 				<h2 class="text-xl font-light tracking-widest leading-10 text-gray-5">Case Studies</h2>
 
@@ -87,7 +87,7 @@
 		</section>
 
 		<!-- Section 4: ContactUs -->
-		<section class="custom-wrapper py-[11.125rem] bg-black-1">
+		<section class="custom-wrapper py-[11rem] bg-black-1">
 			<div id="contact-section" class="custom-container">
 				<h2 id="contact-title" class="text-xl font-light tracking-widest leading-10 text-gray-5">Get in Touch</h2>
 
