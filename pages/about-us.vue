@@ -4,7 +4,7 @@
 		<section class="custom-wrapper h-screen pt-32">
 			<div class="custom-container flex flex-col">
 				<!-- Title -->
-				<div id="page-title" class="flex items-center text-gray-4 space-x-1.5 mb-8">
+				<div id="page-title" class="flex items-center text-blue-400 space-x-1.5 mb-8">
 					<icon class="text-2xl" name="tabler:info-octagon" />
 					<h1 class="text-xl font-bold">About Us</h1>
 				</div>
@@ -50,7 +50,7 @@
 					<div class="flex flex-col md:flex-row space-y-8 md:space-x-8 md:space-y-0 justify-between items-center">
 						<!-- Left Side -->
 						<div class="space-y-8 md:w-1/2">
-							<h1 class="title text-gray-5 text-4xl font-bold">Who are 365 Surveys?</h1>
+							<h1 class="title text-blue-400 text-4xl font-bold">Who are 365 Surveys?</h1>
 							<p class="text-gray-5 text-xl">
 								We are a business of transportation data specialists with a wide experience of operational data
 								collection and monitoring and our team includes specialists in defining test plans and data analytics
@@ -82,7 +82,7 @@
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2 space-y-8">
-							<h1 class="text-white text-4xl font-bold">Quality Assurance</h1>
+							<h1 class="text-blue-400 text-4xl font-bold">Quality Assurance</h1>
 							<p class="text-gray-5 text-xl">
 								Our QA processes start from day one with an assurance assessment on data quality and requirements and is
 								led through to delivery and assured by Dr Ryan Wood.
@@ -105,7 +105,7 @@
 					>
 						<!-- Left Side -->
 						<div class="space-y-8 md:w-1/2">
-							<h1 class="text-white text-4xl font-bold">Data security</h1>
+							<h1 class="text-blue-400 text-4xl font-bold">Data security</h1>
 							<p class="text-gray-5 text-xl">
 								We work with you to manage and comply with all data security requirements and standards. Our partner
 								company of software developers ensures the robustness and security of our systems to international

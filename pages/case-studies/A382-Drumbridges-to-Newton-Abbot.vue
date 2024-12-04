@@ -4,7 +4,7 @@
 		<section class="custom-wrapper hero-background h-screen pt-32">
 			<div class="custom-container flex flex-col">
 				<!-- Path -->
-				<div id="page-path" class="flex items-center text-gray-4 space-x-1.5 mb-8">
+				<div id="page-path" class="flex items-center text-blue-400 space-x-1.5 mb-8">
 					<icon class="text-2xl" name="hugeicons:study-lamp" />
 					<NuxtLink class="text-xl font-bold whitespace-nowrap" to="/case-studies">Case Studies</NuxtLink>
 					<h3 id="page-title" class="text-gray-5 text-sm font-thin mt-1 truncate">/ {{ currentPage }}</h3>

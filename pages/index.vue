@@ -35,7 +35,7 @@
 					<!-- Left side -->
 					<div class="flex flex-col justify-between w-full md:w-1/2 h-[20rem]">
 						<h2 class="text-xl font-light tracking-widest leading-8 text-gray-4">
-							<span class="text-primary text-3xl">Our Services,</span><br />
+							<span class="text-blue-400 font-semibold text-3xl">Our Services,</span><br />
 							Your Solutions
 						</h2>
 
@@ -66,7 +66,7 @@
 				<!-- <h2 class="text-3xl font-light tracking-widest leading-10 text-gray-5">Case Studies</h2> -->
 
 				<h2 class="text-xl font-light tracking-widest leading-8 text-gray-4">
-					<span class="text-primary text-3xl">Case Studies</span><br />
+					<span class="text-blue-400 font-semibold text-3xl">Case Studies</span><br />
 					Recent Projects
 				</h2>
 
@@ -94,7 +94,7 @@
 		<!-- Section 4: ContactUs -->
 		<section class="custom-wrapper py-[11rem] bg-black-1">
 			<div id="contact-section" class="custom-container">
-				<h2 id="contact-title" class="text-xl font-light tracking-widest leading-10 text-gray-5">Get in Touch</h2>
+				<h2 id="contact-title" class="text-xl font-light tracking-widest leading-10 text-blue-400">Get in Touch</h2>
 
 				<p id="contact-title" class="text-gray-4 text-2xl font-normal mt-12">
 					We’re here to help with any questions or inquiries you may have. Whether you want to collaborate, learn more

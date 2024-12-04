@@ -4,7 +4,7 @@
 		<section class="custom-wrapper pt-32 pb-72">
 			<div class="custom-container flex flex-col">
 				<!-- Title -->
-				<div id="page-title" class="flex items-center text-gray-4 space-x-1.5">
+				<div id="page-title" class="flex items-center text-blue-400 space-x-1.5">
 					<icon class="text-2xl" name="material-symbols:home-repair-service-outline-sharp" />
 					<h1 class="text-xl font-bold">Services</h1>
 				</div>

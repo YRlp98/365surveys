@@ -4,7 +4,7 @@
 		<section class="custom-wrapper flex-1 pt-32 pb-20">
 			<div class="custom-container flex flex-col">
 				<!-- Title -->
-				<div id="page-title" class="flex items-center text-gray-4 space-x-1.5">
+				<div id="page-title" class="flex items-center text-blue-400 space-x-1.5">
 					<icon class="text-2xl" name="hugeicons:study-lamp" />
 					<h1 class="text-xl font-bold">Case Studies</h1>
 				</div>
