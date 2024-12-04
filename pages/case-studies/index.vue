@@ -18,7 +18,7 @@
 
 				<!-- Content Wrapper -->
 				<div id="content" class="pt-20 flex-1">
-					<CardCaseStudiesFull />
+					<CardCaseStudies id="case-slide" :cards="cards" />
 				</div>
 			</div>
 		</section>
@@ -27,6 +27,30 @@
 
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
+
+const cards = [
+	{
+		title: "A382 Drumbridges to Newton Abbot",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
+		link: "/case-studies/A382-Drumbridges-to-Newton-Abbot",
+	},
+	{
+		title: "A360 Traffic Management - Part of Stonehenge Amesbury to Berwick Down",
+		description:
+			"The A303 Stonehenge project remains as one of the most complex and sensitive projects investigated in the UK in recent history. Our experts supported the project construction team with highly detailed data and analysis to inform strategic decision making.",
+		link: "/case-studies/A360-Traffic-Management-Part-of-Stonehenge-Amesbury-to-Berwick-Down",
+	},
+	{
+		title: "A64 Traffic Management",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
+		link: "#",
+	},
+	{
+		title: "Drone example",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
+		link: "#",
+	},
+];
 
 onMounted(() => {
 	$gsap.fromTo(

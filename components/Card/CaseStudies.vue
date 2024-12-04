@@ -52,11 +52,6 @@ const props = defineProps({
 const currentCardIndex = ref(0);
 const currentCard = ref(props.cards[currentCardIndex.value]);
 
-const setActiveCard = (index: number) => {
-	currentCardIndex.value = index;
-	currentCard.value = props.cards[index];
-};
-
 const getItemBorderRadius = computed(() => (index: number) => {
 	const totalItems = props.cards.length;
 
@@ -70,6 +65,11 @@ const getItemBorderRadius = computed(() => (index: number) => {
 		return { borderRadius: "0" };
 	}
 });
+
+const setActiveCard = (index: number) => {
+	currentCardIndex.value = index;
+	currentCard.value = props.cards[index];
+};
 </script>
 
 <style scoped>
