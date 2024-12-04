@@ -1,63 +1,24 @@
 <template>
 	<div class="">
 		<div class="gallery-wrap">
-			<!-- Item 1 -->
-			<NuxtLink class="item item-1 flex flex-col" to="/case-studies/A382-Drumbridges-to-Newton-Abbot">
-				<!-- Content -->
-				<div
-					class="content file:z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5"
-				>
-					<!-- Title -->
-					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">A382 Drumbridges to Newton Abbot</h3>
-						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
-					</div>
-					<!-- Description -->
-					<div class="mt-6 text-base">
-						Production of CAD modelling, simulations and rendering for mechanical and civil applications.
-					</div>
-				</div>
-			</NuxtLink>
-
-			<!-- Item 2 -->
+			<!-- Items -->
 			<NuxtLink
-				class="item item-2 flex flex-col"
-				to="/case-studies/A360-Traffic-Management-Part-of-Stonehenge-Amesbury-to-Berwick-Down"
+				v-for="(card, index) in cards"
+				:key="index"
+				:class="`item item-${index + 1} flex flex-col`"
+				:to="card.link"
+				@mouseenter="setActiveCard(index)"
 			>
 				<!-- Content -->
-				<div
-					class="content file:z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5"
-				>
+				<div class="content z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5">
 					<!-- Title -->
 					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">
-							A360 Traffic Management - Part of Stonehenge Amesbury to Berwick Down
-						</h3>
+						<h3 class="text-2xl font-bold tracking-widest">{{ card.title }}</h3>
 						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
 					</div>
 					<!-- Description -->
 					<div class="mt-6 text-base">
-						The A303 Stonehenge project remains as one of the most complex and sensitive projects investigated in the UK
-						in recent history. Our experts supported the project construction team with highly detailed data and
-						analysis to inform strategic decision making
-					</div>
-				</div>
-			</NuxtLink>
-
-			<!-- Item 3 -->
-			<NuxtLink class="item item-3 flex flex-col" to="#">
-				<!-- Content -->
-				<div
-					class="content file:z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5"
-				>
-					<!-- Title -->
-					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">A64 Traffic Management</h3>
-						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
-					</div>
-					<!-- Description -->
-					<div class="mt-6 text-base">
-						Production of CAD modelling, simulations and rendering for mechanical and civil applications.
+						{{ card.description }}
 					</div>
 				</div>
 			</NuxtLink>
@@ -65,7 +26,34 @@
 	</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const cards = [
+	{
+		title: "A382 Drumbridges to Newton Abbot",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
+		link: "/case-studies/A382-Drumbridges-to-Newton-Abbot",
+	},
+	{
+		title: "A360 Traffic Management - Part of Stonehenge Amesbury to Berwick Down",
+		description:
+			"The A303 Stonehenge project remains as one of the most complex and sensitive projects investigated in the UK in recent history. Our experts supported the project construction team with highly detailed data and analysis to inform strategic decision making.",
+		link: "/case-studies/A360-Traffic-Management-Part-of-Stonehenge-Amesbury-to-Berwick-Down",
+	},
+	{
+		title: "A64 Traffic Management",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
+		link: "#",
+	},
+];
+
+const currentCardIndex = ref(0);
+const currentCard = ref(cards[currentCardIndex.value]);
+
+const setActiveCard = (index: number) => {
+	currentCardIndex.value = index;
+	currentCard.value = cards[index];
+};
+</script>
 
 <style scoped>
 .gallery-wrap {
