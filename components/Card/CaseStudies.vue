@@ -1,12 +1,12 @@
 <template>
 	<div class="">
 		<div class="gallery-wrap">
-			<!-- Items -->
+			<!-- Cards -->
 			<NuxtLink
 				v-for="(card, index) in cards"
 				:key="index"
-				:class="`item item-${index + 1} flex flex-col`"
 				:to="card.link"
+				:class="[`item item-${index + 1} flex flex-col`, { hovered: currentCardIndex === index }]"
 				@mouseenter="setActiveCard(index)"
 			>
 				<!-- Content -->
@@ -76,6 +76,7 @@ const setActiveCard = (index: number) => {
 	transition: flex 0.4s cubic-bezier(0.32, 0.79, 0.38, 0.99), filter 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
+.item.hovered,
 .item:hover {
 	flex: 7;
 	filter: grayscale(0) saturate(1.3) blur(0px);
@@ -106,6 +107,17 @@ const setActiveCard = (index: number) => {
 
 .content {
 	transition: opacity 0.2s ease, backdrop-filter 1s cubic-bezier(0.86, 0, 0.07, 1);
+	opacity: 0;
+}
+
+/* Default active card */
+.item.hovered .content,
+.item-1 .content {
+	opacity: 1;
+}
+
+/* Hide content when the card is not hovered or not expanded */
+.item:not(.hovered) .content {
 	opacity: 0;
 }
 
