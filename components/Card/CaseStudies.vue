@@ -7,6 +7,7 @@
 				:key="index"
 				:to="card.link"
 				:class="[`item item-${index + 1} flex flex-col`, { hovered: currentCardIndex === index }]"
+				:style="getItemBorderRadius(index)"
 				@mouseenter="setActiveCard(index)"
 			>
 				<!-- Content -->
@@ -27,32 +28,48 @@
 </template>
 
 <script setup lang="ts">
-const cards = [
-	{
-		title: "A382 Drumbridges to Newton Abbot",
-		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
-		link: "/case-studies/A382-Drumbridges-to-Newton-Abbot",
+import { ref } from "vue";
+
+interface Card {
+	title: string;
+	description: string;
+	link: string;
+}
+
+const props = defineProps({
+	cards: {
+		type: Array as PropType<Card[]>,
+		required: true,
+		validator(value: Card[]): boolean {
+			return value.every(
+				(item: Card) =>
+					item.hasOwnProperty("title") && item.hasOwnProperty("description") && item.hasOwnProperty("link")
+			);
+		},
 	},
-	{
-		title: "A360 Traffic Management - Part of Stonehenge Amesbury to Berwick Down",
-		description:
-			"The A303 Stonehenge project remains as one of the most complex and sensitive projects investigated in the UK in recent history. Our experts supported the project construction team with highly detailed data and analysis to inform strategic decision making.",
-		link: "/case-studies/A360-Traffic-Management-Part-of-Stonehenge-Amesbury-to-Berwick-Down",
-	},
-	{
-		title: "A64 Traffic Management",
-		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
-		link: "#",
-	},
-];
+});
 
 const currentCardIndex = ref(0);
-const currentCard = ref(cards[currentCardIndex.value]);
+const currentCard = ref(props.cards[currentCardIndex.value]);
 
 const setActiveCard = (index: number) => {
 	currentCardIndex.value = index;
-	currentCard.value = cards[index];
+	currentCard.value = props.cards[index];
 };
+
+const getItemBorderRadius = computed(() => (index: number) => {
+	const totalItems = props.cards.length;
+
+	if (totalItems === 1) {
+		return { borderRadius: "12px" };
+	} else if (index === 0) {
+		return { borderRadius: "12px 0 0 12px" };
+	} else if (index === totalItems - 1) {
+		return { borderRadius: "0 12px 12px 0" };
+	} else {
+		return { borderRadius: "0" };
+	}
+});
 </script>
 
 <style scoped>
@@ -110,32 +127,32 @@ const setActiveCard = (index: number) => {
 	opacity: 0;
 }
 
-/* Default active card */
 .item.hovered .content,
 .item-1 .content {
 	opacity: 1;
 }
 
-/* Hide content when the card is not hovered or not expanded */
 .item:not(.hovered) .content {
 	opacity: 0;
 }
 
 .item-1 {
-	border-radius: 12px 0 0 12px;
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
 		url("/assets/images/case-studies/case-study-1-p1.jpg");
 }
 
 .item-2 {
-	border-radius: 0 0 0 0;
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
 		url("/assets/images/case-studies/case-study-2-p3.webp");
 }
 
 .item-3 {
-	border-radius: 0 12px 12px 0;
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
 		url("/assets/images/stock3.jpg");
+}
+
+.item-4 {
+	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
+		url("/assets/images/stock4.jpg");
 }
 </style>

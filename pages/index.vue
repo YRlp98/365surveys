@@ -79,7 +79,7 @@
 
 				<!-- Second Row -->
 				<div class="flex flex-col md:flex-row items-center justify-between mt-16">
-					<CardCaseStudies id="case-slide" class="md:w-2/3" />
+					<CardCaseStudies id="case-slide" class="md:w-2/3" :cards="cards" />
 
 					<ButtonMoreRightArrow
 						id="case-button"
@@ -123,6 +123,25 @@
 
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
+
+const cards = [
+	{
+		title: "A382 Drumbridges to Newton Abbot",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
+		link: "/case-studies/A382-Drumbridges-to-Newton-Abbot",
+	},
+	{
+		title: "A360 Traffic Management - Part of Stonehenge Amesbury to Berwick Down",
+		description:
+			"The A303 Stonehenge project remains as one of the most complex and sensitive projects investigated in the UK in recent history. Our experts supported the project construction team with highly detailed data and analysis to inform strategic decision making.",
+		link: "/case-studies/A360-Traffic-Management-Part-of-Stonehenge-Amesbury-to-Berwick-Down",
+	},
+	{
+		title: "A64 Traffic Management",
+		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
+		link: "#",
+	},
+];
 
 function scrollToSection(sectionId: string) {
 	const section = document.getElementById(sectionId);
