@@ -45,11 +45,6 @@ const cards = [
 		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
 		link: "#",
 	},
-	{
-		title: "Drone example",
-		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications.",
-		link: "#",
-	},
 ];
 
 onMounted(() => {
