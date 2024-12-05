@@ -17,6 +17,9 @@
 					<NuxtLink to="/" class="nav-link" active-class="active-link">
 						<button class="h-16 border-b-2 border-transparent hover:text-gray-5">Home</button>
 					</NuxtLink>
+					<NuxtLink to="services" class="nav-link" active-class="active-link">
+						<button class="h-16 border-b-2 border-transparent hover:text-gray-5">Services</button>
+					</NuxtLink>
 					<NuxtLink to="/about-us" class="nav-link" active-class="active-link">
 						<button class="h-16 border-b-2 border-transparent hover:text-gray-5">About Us</button>
 					</NuxtLink>
