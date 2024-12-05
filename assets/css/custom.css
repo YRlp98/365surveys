@@ -43,7 +43,7 @@
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 6px;
     height: 4px;
 }
 
@@ -52,12 +52,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--black-3);
+    background: var(--gray-2);
     border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--black-1);
+    background: var(--primary);
 }
-
 /* ================ */
