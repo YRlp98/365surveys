@@ -94,9 +94,9 @@
 		<!-- Section 4: ContactUs -->
 		<section class="custom-wrapper py-[11rem] bg-black-1">
 			<div id="contact-section" class="custom-container">
-				<h2 id="contact-title" class="text-xl font-light tracking-widest leading-10 text-blue-400">Get in Touch</h2>
+				<h2 id="contact-title" class="font-semibold text-3xl tracking-widest leading-10 text-blue-400">Get in Touch</h2>
 
-				<p id="contact-title" class="text-gray-4 text-2xl font-normal mt-12">
+				<p id="contact-title" class="text-gray-4 text-xl font-normal mt-12">
 					We’re here to help with any questions or inquiries you may have. Whether you want to collaborate, learn more
 					about our services, or just say hello, we'd love to hear from you. Don’t hesitate to reach out!
 				</p>
