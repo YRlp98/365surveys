@@ -76,7 +76,7 @@
 							planning process.
 						</p>
 
-						<img class="w-full rounded-xl" src="/assets/images/gif_test_2.gif" alt="" />
+						<!-- <img class="w-full rounded-xl" src="/assets/images/gif_test_2.gif" alt="" /> -->
 					</div>
 				</div>
 
