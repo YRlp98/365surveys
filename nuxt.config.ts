@@ -5,8 +5,20 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
 
-  // Enable server-side rendering
   ssr: true,
+
+  // proxy: {
+  //   '/api': {
+  //     target: 'https://dev.sytemonitor.co.uk',
+  //     pathRewrite: { '^/api': '/api' },
+  //   },
+  // },
+
+  runtimeConfig: {
+    public: {
+      API_BASE_URL: 'https://dev.sytemonitor.co.uk/api',
+    },
+  },
 
   // Global page transition
   app: {
