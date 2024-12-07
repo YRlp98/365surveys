@@ -5,7 +5,7 @@
 			<span
 				class="txt-rotate text-3xl font-light"
 				data-period="2000"
-				data-rotate='["Experts in Traffic Data. ", "Supporting your journey to understand locations, behaviors, and deliver insights. "]'
+				data-rotate='["Experts in Traffic Data. ", "Supporting your journey to understand locations, behaviours, and deliver insights. "]'
 			></span>
 		</div>
 	</div>
