@@ -1,24 +1,24 @@
 <template>
-	<div class="">
-		<div class="flex flex-row h-[26.25rem] flex-wrap">
+	<div class="w-full">
+		<div class="flex flex-col lg:flex-row flex-wrap lg:h-[26.25rem] h-auto">
 			<!-- Cards -->
 			<NuxtLink
 				v-for="(card, index) in cards"
 				:key="index"
 				:to="card.link"
-				:class="[`item item-${index + 1} flex flex-col`, { hovered: currentCardIndex === index }]"
+				:class="[`item item-${index + 1} flex flex-col p-4`, { hovered: currentCardIndex === index }]"
 				:style="getItemBorderRadius(index)"
 				@mouseenter="setActiveCard(index)"
 			>
 				<!-- Content -->
-				<div class="content z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5">
+				<div class="relative content z-10 card-content flex-grow p-6 flex flex-col justify-end text-gray-4 hover:text-gray-5">
 					<!-- Title -->
 					<div class="flex items-center justify-between">
-						<h3 class="text-2xl font-bold tracking-widest">{{ card.title }}</h3>
-						<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
+						<h3 class="text-lg lg:text-2xl font-bold tracking-widest ">{{ card.title }}</h3>
+						<Icon class="absolute right-0 top-0 text-lg lg:text-2xl" name="material-symbols:arrows-more-up" />
 					</div>
 					<!-- Description -->
-					<div class="mt-6 text-base">
+					<div class="mt-4 lg:mt-6 text-sm lg:text-base">
 						{{ card.description }}
 					</div>
 				</div>
@@ -127,6 +127,13 @@ const setActiveCard = (index: number) => {
 
 .item:not(.hovered) .content {
 	opacity: 0;
+}
+
+/* Show Content on mobile */
+@media (max-width: 1024px) {
+	.item:not(.hovered) .content {
+		opacity: 1;
+	}
 }
 
 .item-1 {
