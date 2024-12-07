@@ -1,6 +1,6 @@
 <template>
 	<div class="">
-		<div class="gallery-wrap">
+		<div class="flex flex-row h-[26.25rem] flex-wrap">
 			<!-- Cards -->
 			<NuxtLink
 				v-for="(card, index) in cards"
@@ -73,13 +73,6 @@ const setActiveCard = (index: number) => {
 </script>
 
 <style scoped>
-.gallery-wrap {
-	display: flex;
-	flex-direction: row;
-	height: 26.25rem;
-	flex-wrap: wrap;
-}
-
 .item {
 	cursor: pointer;
 	flex: 1;
