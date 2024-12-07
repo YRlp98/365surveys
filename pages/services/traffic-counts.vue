@@ -1,6 +1,7 @@
 <template>
 	<div class="overflow-hidden bg-black-3">
 		<!-- Hero Section -->
+		<!-- TODO: Copy this section based on the case study page: wrap and scroll bar -->
 		<section class="custom-wrapper hero-background h-screen pt-32">
 			<div class="custom-container flex flex-col">
 				<!-- Path -->
