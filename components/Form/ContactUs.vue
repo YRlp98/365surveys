@@ -87,10 +87,10 @@ const fullUrl = new URL(CONTACT_FORM_ENDPOINT, API_BASE_URL).href;
 console.log("Full URL:", fullUrl);
 
 const form = ref({
-	name: "Yousef",
-	email: "hello@yrlp.ir",
+	name: "",
+	email: "",
 	telephone: "",
-	message: "hi mom",
+	message: "",
 	captchaValue: "",
 });
 

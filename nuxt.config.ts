@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '/api': {
       target: process.env.VITE_API_BASE_URL,
       changeOrigin: true,
-      pathRewrite: { '^/api': '' },
+      pathRewrite: { '': '' },
     },
   },
 
