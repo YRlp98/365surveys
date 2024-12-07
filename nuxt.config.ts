@@ -7,16 +7,11 @@ export default defineNuxtConfig({
 
   ssr: true,
 
-  // proxy: {
-  //   '/api': {
-  //     target: 'https://dev.sytemonitor.co.uk',
-  //     pathRewrite: { '^/api': '/api' },
-  //   },
-  // },
-
-  runtimeConfig: {
-    public: {
-      API_BASE_URL: 'https://dev.sytemonitor.co.uk/api',
+  proxy: {
+    '/api': {
+      target: process.env.VITE_API_BASE_URL,
+      changeOrigin: true,
+      pathRewrite: { '^/api': '' },
     },
   },
 
