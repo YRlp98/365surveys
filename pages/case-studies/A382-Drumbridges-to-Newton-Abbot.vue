@@ -4,10 +4,15 @@
 		<section class="custom-wrapper hero-background h-screen pt-32">
 			<div class="custom-container flex flex-col">
 				<!-- Path -->
-				<div id="page-path" class="flex items-center text-blue-400 space-x-1.5 mb-8">
-					<icon class="text-2xl" name="hugeicons:study-lamp" />
-					<NuxtLink class="text-xl font-bold whitespace-nowrap" to="/case-studies">Case Studies</NuxtLink>
-					<h3 id="page-title" class="text-gray-5 text-sm font-thin mt-1 truncate">/ {{ currentPage }}</h3>
+				<div
+					id="page-path"
+					class="flex flex-col md:flex-row items-start md:items-center text-blue-400 space-x-1.5 mb-8"
+				>
+					<div class="flex items-start space-x-1.5">
+						<icon class="text-2xl" name="hugeicons:study-lamp" />
+						<NuxtLink class="text-xl font-bold whitespace-nowrap" to="/case-studies">Case Studies</NuxtLink>
+					</div>
+					<h3 id="page-title" class="text-gray-5 text-sm font-thin mt-1">/ {{ currentPage }}</h3>
 				</div>
 
 				<div class="flex items-center justify-center h-full mb-[15%]">
