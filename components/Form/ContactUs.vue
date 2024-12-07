@@ -1,5 +1,5 @@
 <template>
-	<form @submit.prevent="submitForm" class="text-left relative w-[22rem] md:w-[27rem] space-y-4 z-10 flex-1">
+	<form @submit.prevent="submitForm" class="text-left relative w-full space-y-4 z-10 flex-1">
 		<!-- Name -->
 		<div class="flex flex-col items-start">
 			<label for="name" class="mb-1 ml-3 text-gray-4">Name <span class="text-primary">*</span></label>
@@ -82,10 +82,6 @@ import axios from "axios";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const CAPTCHA_ENDPOINT = import.meta.env.VITE_CAPTCHA_ENDPOINT;
 const CONTACT_FORM_ENDPOINT = import.meta.env.VITE_CONTACT_FORM_ENDPOINT;
-
-console.log("API_BASE_URL:", API_BASE_URL);
-console.log("CAPTCHA_ENDPOINT:", CAPTCHA_ENDPOINT);
-console.log("CONTACT_FORM_ENDPOINT:", CONTACT_FORM_ENDPOINT);
 
 const fullUrl = new URL(CONTACT_FORM_ENDPOINT, API_BASE_URL).href;
 console.log("Full URL:", fullUrl);

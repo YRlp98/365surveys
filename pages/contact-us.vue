@@ -14,9 +14,9 @@
 					<h1 class="title text-gray-5 text-4xl font-bold">HAVE A QUESTION?</h1>
 					<p class="mt-8 text-xl">We’re here to help! Reach out to us and we'll get back to you as soon as possible.</p>
 
-					<div class="mt-16 flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-start">
+					<div class="mt-16 flex flex-col lg:flex-row space-y-8 md:space-y-0 justify-between items-start">
 						<!-- Left Side -->
-						<div id="left-side" class="space-y-8 md:w-1/2 flex flex-col justify-between">
+						<div id="left-side" class="space-y-8 w-full lg:w-1/2 flex flex-col justify-between">
 							<!-- Contact info -->
 							<div class="flex flex-col space-y-2">
 								<span><b>Email:</b> Ops@365surveys.co.uk</span>
@@ -38,7 +38,7 @@
 							</div>
 						</div>
 						<!-- Right Side -->
-						<div id="right-side">
+						<div id="right-side" class="w-full lg:w-1/3">
 							<FormContactUs />
 						</div>
 					</div>
