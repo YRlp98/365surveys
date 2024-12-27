@@ -34,7 +34,7 @@
 					<!-- Scroll -->
 					<WidgetScroll
 						id="scroll"
-						class="absolute bottom-12 cursor-pointer"
+						class="hidden md:block absolute bottom-12 cursor-pointer"
 						@click="scrollToSection('what-section')"
 					/>
 				</div>
