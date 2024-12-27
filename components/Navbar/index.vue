@@ -97,6 +97,12 @@ const openMenu = () => {
 			delay: 0.5,
 			opacity: 0,
 			ease: "power4.out",
+			onStart: () => {
+				navItems.value.style.pointerEvents = "none";
+			},
+			onComplete: () => {
+				navItems.value.style.pointerEvents = "auto";
+			},
 		});
 	}
 
