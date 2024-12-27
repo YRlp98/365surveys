@@ -19,9 +19,17 @@
 						<div id="left-side" class="space-y-8 w-full lg:w-1/2 flex flex-col justify-between">
 							<!-- Contact info -->
 							<div class="flex flex-col space-y-2">
-								<span><b>Email:</b> Ops@365surveys.co.uk</span>
-								<span><b>Phone:</b> 01963 361123</span>
-								<span><b>Address:</b> Office Suite 2, Brickfield Offices, Wincanton BA9 8EG, United Kingdom</span>
+								<span
+									><b>Email:</b
+									><a href="mailto:Ops@365surveys.co.uk" class="ml-1.5 text-blue-400">Ops@365surveys.co.uk</a></span
+								>
+								<span><b>Phone:</b><a href="tel:01963361123" class="ml-1.5 text-blue-400">01963 361123</a></span>
+								<span
+									><b>Address:</b
+									><a href="https://maps.app.goo.gl/MWYdHi7xSqeHsfAf9" target="_blank" class="ml-1.5 text-blue-400"
+										>Office Suite 2, Brickfield Offices, Wincanton BA9 8EG, United Kingdom</a
+									></span
+								>
 							</div>
 
 							<!-- Map -->
