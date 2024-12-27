@@ -61,7 +61,7 @@
 		</section>
 
 		<!-- Section 3: Case Studies -->
-		<section class="custom-wrapper py-[11rem] bg-black-3">
+		<section class="custom-wrapper pt-32 pb-36 bg-black-3">
 			<div id="case-section" class="custom-container">
 				<!-- <h2 class="text-3xl font-light tracking-widest leading-10 text-gray-5">Case Studies</h2> -->
 
@@ -92,7 +92,7 @@
 		</section>
 
 		<!-- Section 4: ContactUs -->
-		<section class="custom-wrapper py-[11rem] bg-black-1">
+		<section class="custom-wrapper pt-32 pb-36 bg-black-1">
 			<div id="contact-section" class="custom-container">
 				<h2 id="contact-title" class="font-semibold text-3xl tracking-widest leading-10 text-blue-400">Get in Touch</h2>
 
