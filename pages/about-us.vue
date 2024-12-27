@@ -10,9 +10,9 @@
 				</div>
 
 				<!-- Contents Wrapper -->
-				<div class="flex-grow flex items-center justify-center">
+				<div class="pt-20 md:pt-0 flex-grow flex items-center justify-center">
 					<div
-						class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0 mb-[15%]"
+						class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 mb-[15%]"
 					>
 						<!-- Logo -->
 						<img id="hero-logo" src="/assets/images/logo.svg" alt="Logo" class="h-[15rem]" />
