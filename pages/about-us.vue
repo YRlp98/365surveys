@@ -42,7 +42,7 @@
 		</section>
 
 		<!-- Content Section -->
-		<section id="what-section" class="custom-wrapper py-[20rem] md:py-[10.25rem]">
+		<section id="what-section" class="custom-wrapper pt-[20rem] sm:pt-[25rem] pb-72 md:pt-[10.25rem]">
 			<div class="custom-container">
 				<!-- Content -->
 				<div class="flex flex-col space-y-[15rem]">
