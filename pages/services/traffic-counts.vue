@@ -8,12 +8,12 @@
 				<div id="page-path" class="flex items-center text-gray-4 space-x-1.5 mb-8">
 					<icon class="text-2xl" name="material-symbols:home-repair-service-outline-sharp" />
 					<NuxtLink class="text-xl font-bold" to="/services">Services</NuxtLink>
-					<h3 id="page-title" class="text-gray-5 text-sm font-thin mt-1">/ {{ currentPage }}</h3>
+					<h3 id="page-title" class="text-gray-5 text-sm font-thin mt-1">/ {{ service.title }}</h3>
 				</div>
 
 				<div class="flex items-center justify-center h-full mb-[15%]">
 					<!-- Title -->
-					<h1 id="hero-title" class="text-gray-5 text-5xl font-bold">Traffic Counts</h1>
+					<h1 id="hero-title" class="text-gray-5 text-5xl font-bold">{{ service.title }}</h1>
 
 					<!-- Scroll -->
 					<WidgetScroll id="hero-scroll" class="absolute bottom-12" />
@@ -30,40 +30,31 @@
 					<div class="flex flex-col md:flex-row space-y-8 md:space-y-0 gap-8 justify-between items-start">
 						<!-- Left Side -->
 						<div class="md:w-1/2">
-							<NuxtImg class="rounded-xl" src="/images/services/TrafficCounts.webp" alt="Traffic Counts" format="webp" quality="82" sizes="sm:100vw md:50vw" />
+							<NuxtImg class="rounded-xl" :src="service.image" :alt="service.imageAlt" format="webp" quality="82" sizes="sm:100vw md:50vw" />
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2">
-							<p class="text-3xl font-bold">Video analysis of junctions to measure performance and identify patterns</p>
+							<p class="text-3xl font-bold">{{ service.summary }}</p>
+							<p class="mt-8 text-gray-4">{{ service.description }}</p>
 						</div>
 					</div>
 
-					<p>
-						Traffic counts show how many people use a road, junction or access point, and how that activity changes
-						throughout the day. We can collect data by vehicle type and agreed time interval, giving you a useful
-						baseline for transport assessments, scheme design and ongoing monitoring.
-					</p>
+					<section aria-labelledby="traffic-count-approach" class="space-y-5 pt-4">
+						<h2 id="traffic-count-approach" class="text-2xl font-bold">{{ service.detailHeading }}</h2>
+						<p v-for="paragraph in service.details" :key="paragraph">{{ paragraph }}</p>
+					</section>
 
-					<p>
-						Our team can help define survey locations, dates, time periods and classifications around the question you
-						need to answer. The results are presented in a clear format so you can compare locations, identify busy
-						periods and use the evidence in your next project decision.
-					</p>
+					<section aria-labelledby="traffic-count-benefits" class="space-y-5">
+						<h2 id="traffic-count-benefits" class="text-2xl font-bold">What traffic counts can help you understand</h2>
+						<ul class="list-disc space-y-5 pl-6 marker:text-blue-400">
+							<li v-for="benefit in service.benefits" :key="benefit.title" class="pl-2">
+								<p class="font-bold text-white">{{ benefit.title }}</p>
+								<p class="mt-1 text-gray-4">{{ benefit.text }}</p>
+							</li>
+						</ul>
+					</section>
 
-					<div class="space-y-5 pt-4">
-						<h2 class="text-2xl font-bold">A survey built around your question</h2>
-						<p>
-							Every site has different data needs. We can agree the count points, survey dates, interval lengths and
-							vehicle categories with you before collection, so the survey captures the information your assessment
-							requires. Where useful, traffic counts can be planned alongside other transport surveys for a fuller view
-							of activity at a location.
-						</p>
-						<p>
-							The delivered data can help compare roads, approaches or periods and provide a dependable record for
-							design work, planning submissions and monitoring. We will confirm the reporting format and scope with you
-							so the results are straightforward to interpret and ready to use in your project.
-						</p>
-					</div>
+					<p class="text-gray-4">{{ service.closing }}</p>
 				</div>
 
 				<ButtonBackLeftArrow
@@ -78,25 +69,21 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute();
-const { $gsap } = useNuxtApp();
+import services from "~/data/services.json";
 
-const currentPage = computed(() => {
-	const routeName = route.name ? route.name.toString() : "";
-	const pageTitle = routeName.split("-").slice(1).join(" ");
-	return pageTitle ? pageTitle.replace(/-/g, " ") : "Page";
-});
+const { $gsap } = useNuxtApp();
+const service = services["traffic-counts"];
 
 useSeoMeta({
-	title: "Traffic Counts | 365 Surveys",
-	description: "Traffic count surveys provide clear data on road and junction use, by time period and vehicle type.",
-	ogTitle: "Traffic Counts | 365 Surveys",
-	ogDescription: "Understand how roads and junctions are used with tailored traffic count surveys from 365 Surveys.",
-	ogImage: "https://365Surveys.co.uk/images/services/TrafficCounts.webp",
+	title: `${service.title} | 365 Surveys`,
+	description: service.description,
+	ogTitle: `${service.title} | 365 Surveys`,
+	ogDescription: service.summary,
+	ogImage: `https://365Surveys.co.uk${service.image}`,
 	ogUrl: "https://365Surveys.co.uk/services/traffic-counts",
-	twitterTitle: "Traffic Counts | 365 Surveys",
-	twitterDescription: "Clear traffic count data to support transport assessments, design and monitoring.",
-	twitterImage: "https://365Surveys.co.uk/images/services/TrafficCounts.webp",
+	twitterTitle: `${service.title} | 365 Surveys`,
+	twitterDescription: service.summary,
+	twitterImage: `https://365Surveys.co.uk${service.image}`,
 	twitterCard: "summary_large_image",
 });
 

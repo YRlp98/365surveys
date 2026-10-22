@@ -19,67 +19,13 @@
 				<!-- Content Wrapper -->
 				<div id="content" class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-20">
 					<CardService
+						v-for="service in serviceCards"
+						:key="service.link"
 						class="h-[25rem]"
-						title="Traffic Counts"
-						description="Reliable traffic volume data to help you understand how roads and junctions are used."
-						image="TrafficCounts"
-						link="/services/traffic-counts"
-					/>
-
-					<CardService
-						class="h-[25rem]"
-						title="Driver behaviour"
-						description="Understand road user behaviour, interactions and movement patterns."
-						image="driverBehaviour"
-						link="/services/driver-behaviour"
-					/>
-
-					<CardService
-						class="h-[25rem]"
-						title="Journey Times"
-						description="Measure journey duration and reliability across routes and time periods."
-						image="journeyTime"
-						link="/services/journey-times"
-					/>
-
-					<CardService
-						class="h-[25rem]"
-						title="Traffic Speed"
-						description="Automated and manual data collection using radar and laser technology"
-						image="trafficSpeed"
-						link="/services/traffic-speed"
-					/>
-
-					<CardService
-						class="h-[25rem]"
-						title="Drone surveys"
-						description="Traffic count and movement analytics, video, photogrammetry and LIDAR"
-						image="droneSurveys"
-						link="/services/drone-surveys"
-					/>
-
-					<CardService
-						class="h-[25rem]"
-						title="Turning Counts"
-						description="Video analysis of junctions to measure performance and identify patterns"
-						image="turningCounts"
-						link="/services/turning-counts"
-					/>
-
-					<CardService
-						class="h-[25rem]"
-						title="Parking"
-						description="Define demand and usage for parking both on and off street"
-						image="parking"
-						link="/services/parking"
-					/>
-
-					<CardService
-						class="h-[25rem]"
-						title="Public Transport"
-						description="See how passengers use routes, stops and public transport services."
-						image="publicTransport"
-						link="/services/public-transport"
+						:title="service.title"
+						:description="service.description"
+						:image="service.image"
+						:link="service.link"
 					/>
 				</div>
 			</div>
@@ -88,7 +34,13 @@
 </template>
 
 <script setup lang="ts">
+import services from "~/data/services.json";
+
 const { $gsap } = useNuxtApp();
+const serviceCards = Object.entries(services).map(([slug, service]) => ({
+	...service,
+	link: `/services/${slug}`,
+}));
 
 onMounted(() => {
 	$gsap.fromTo(

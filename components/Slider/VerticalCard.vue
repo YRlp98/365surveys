@@ -8,76 +8,46 @@
 			:description="slide.description"
 			:image="slide.image"
 			:link="slide.link"
+			:disabled="currentIndex !== index"
 			:data-slide="index + 1"
 			class="slide cursor-pointer transition-opacity duration-700 ease-out"
 			:class="{ 'slide--active': currentIndex === index, prev: prevIndex === index, next: nextIndex === index }"
-			@click="setActiveSlide(index)"
+			@activate="setActiveSlide(index)"
 			@mouseover="onHover"
 			@mouseleave="onHoverLeave"
 		/>
 	</div>
 </template>
 
-<script setup>
-import { ref, computed, onMounted } from "vue";
+<script setup lang="ts">
+import { computed, onMounted, onUnmounted, ref } from "vue";
+import services from "~/data/services.json";
 
-const slides = [
-	{
-		title: "Drone surveys",
-		description: "Traffic count and movement analytics, video, photogrammetry and LIDAR",
-		image: "droneSurveys",
-	},
-	{
-		title: "Traffic Counts",
-		description: "Production of CAD modelling, simulations and rendering for mechanical and civil applications",
-		image: "TrafficCounts",
-	},
-	{
-		title: "Driver behaviour",
-		description: "Monitoring and analysis of driver behaviours using discrete methods and experienced experts",
-		image: "driverBehaviour",
-	},
-];
+const featuredSlugs = ["drone-surveys", "traffic-counts", "driver-behaviour"] as const;
+const slides = featuredSlugs.map((slug) => ({ ...services[slug], link: `/services/${slug}` }));
 
 const currentIndex = ref(0);
-const intervalId = ref(null);
+let intervalId: ReturnType<typeof setInterval> | undefined;
 
 const prevIndex = computed(() => (currentIndex.value - 1 + slides.length) % slides.length);
 const nextIndex = computed(() => (currentIndex.value + 1) % slides.length);
 
-const setActiveSlide = (index) => {
+const setActiveSlide = (index: number) => {
 	currentIndex.value = index;
 	resetTimer();
-	updateSlides();
-};
-
-const updateSlides = () => {
-	let slidesElements = document.querySelectorAll(".slide");
-	if (!slidesElements) return;
-
-	slidesElements.forEach((slide, index) => {
-		slide.classList.remove("prev", "next");
-		if (index === currentIndex.value) {
-			slide.classList.add("slide--active");
-		} else if (index === prevIndex.value) {
-			slide.classList.add("prev");
-		} else if (index === nextIndex.value) {
-			slide.classList.add("next");
-		}
-	});
 };
 
 const startTimer = () => {
-	intervalId.value = setInterval(() => {
+	stopTimer();
+	intervalId = setInterval(() => {
 		currentIndex.value = (currentIndex.value + 1) % slides.length;
-		updateSlides();
 	}, 8000);
 };
 
 const stopTimer = () => {
-	if (intervalId.value) {
-		clearInterval(intervalId.value);
-		intervalId.value = null;
+	if (intervalId) {
+		clearInterval(intervalId);
+		intervalId = undefined;
 	}
 };
 
@@ -95,13 +65,10 @@ const onHoverLeave = () => {
 };
 
 onMounted(() => {
-	updateSlides();
 	startTimer();
 });
 
-onUnmounted(() => {
-	if (intervalId) clearInterval(intervalId);
-});
+onUnmounted(stopTimer);
 </script>
 
 <style scoped>

@@ -1,5 +1,14 @@
 <template>
-	<NuxtLink class="card flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400 focus-visible:outline-offset-4" :to="link">
+	<NuxtLink
+		:to="link"
+		:role="disabled ? 'button' : undefined"
+		:tabindex="disabled ? 0 : undefined"
+		:aria-disabled="disabled ? 'true' : undefined"
+		class="card flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400 focus-visible:outline-offset-4"
+		@click.capture="handleActivation"
+		@keydown.enter="handleActivation"
+		@keydown.space="handleActivation"
+	>
 		<div class="gradient-overlay absolute inset-0 bg-black opacity-50 z-0"></div>
 		<!-- Content -->
 		<div class="z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5">
@@ -9,12 +18,12 @@
 				<Icon class="text-2xl" name="material-symbols:arrows-more-up" />
 			</div>
 			<!-- Description -->
-			<div class="mt-6 text-base">
+			<div class="mt-6 text-base line-clamp-2">
 				{{ description }}
 			</div>
 		</div>
 		<NuxtImg
-			:src="currentImage"
+			:src="image"
 			:alt="title"
 			class="absolute left-0 bottom-0 z-[-1] overflow-hidden object-cover w-full h-full"
 			format="webp"
@@ -25,35 +34,31 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, onMounted } from "vue";
+import { onMounted, withDefaults } from "vue";
 
-const props = defineProps<{
-	title: string;
-	description: string;
-	image: string;
-	link: string;
-}>();
+const props = withDefaults(
+	defineProps<{
+		title: string;
+		description: string;
+		image: string;
+		link: string;
+		disabled?: boolean;
+	}>(),
+	{ disabled: false }
+);
+const emit = defineEmits<{ activate: [] }>();
 
-const images = {
-	stock1: "/images/stock1.webp",
-	stock2: "/images/stock2.webp",
-	stock3: "/images/stock3.webp",
-	TrafficCounts: "/images/services/TrafficCounts.webp",
-	journeyTime: "/images/services/journeyTime.webp",
-	driverBehaviour: "/images/services/driverBehaviour.webp",
-	droneSurveys: "/images/services/droneSurveys.webp",
-	parking: "/images/services/parking.webp",
-	publicTransport: "/images/services/publicTransport.webp",
-	trafficSpeed: "/images/services/trafficSpeed.webp",
-	turningCounts: "/images/services/turningCounts.webp",
-};
+function handleActivation(event: MouseEvent | KeyboardEvent) {
+	if (!props.disabled) return;
 
-const currentImage = computed(() => images[props.image]);
+	event.preventDefault();
+	emit("activate");
+}
 
 onMounted(() => {
-	const updateCursor = ({ x, y }) => {
-		document.documentElement.style.setProperty("--x", x);
-		document.documentElement.style.setProperty("--y", y);
+	const updateCursor = (event: PointerEvent) => {
+		document.documentElement.style.setProperty("--x", String(event.clientX));
+		document.documentElement.style.setProperty("--y", String(event.clientY));
 	};
 
 	document.body.addEventListener("pointermove", updateCursor);

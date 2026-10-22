@@ -1,0 +1,39 @@
+{
+	"a382-drumbridges-to-newton-abbot": {
+		"title": "A382 Drumbridges to Newton Abbot",
+		"client": "Core Highways and Milestone Infrastructure",
+		"summary": "Traffic and environmental data analysis to support planning and construction decisions.",
+		"image": "/images/case-studies/case-study-1-p1.webp",
+		"imageAlt": "A382 Drumbridges to Newton Abbot project",
+		"intro": [
+			"As part of the A382 Drumbridges to Newton Abbot scheme, 365 Surveys Ltd worked collaboratively with Milestone Infrastructure and Core Highways to define an efficient construction strategy while limiting the impact on the local community and environment. Carbon and pollutant data analysis informed air quality and traffic models, supporting decision-making throughout the planning process."
+		]
+	},
+	"a360-traffic-management-stonehenge": {
+		"title": "A360 Traffic Management – Stonehenge",
+		"client": "OCU Group and National Highways",
+		"summary": "Detailed data and analysis to inform traffic management for a complex and sensitive project.",
+		"image": "/images/case-studies/case-study-2-p3.webp",
+		"imageAlt": "Road traffic near the A360 and Stonehenge project area",
+		"intro": [
+			"During 2024, 365 Surveys Ltd supported National Highways, SSEN and OCU Group by collecting detailed traffic data for a traffic management impact assessment. Our team worked with the construction team, National Highways and Wiltshire Council to collect data in urban and rural locations with care for the sensitivity of the project.",
+			"Data collection used automatic traffic counters at key locations and radar where a non-contact approach was more suitable. Our team planned survey locations, managed the permit process, deployed and removed equipment, and reinstated the carriageway where required."
+		],
+		"supportingImage": "/images/case-studies/case-study-2-p1.webp",
+		"supportingImageAlt": "Aerial view of the A360 traffic management project area",
+		"supportingText": [
+			"Our team also used connected vehicle data to gather journey time and vehicle speed information along key routes while the A360 was closed for construction. This helped OCU and National Highways understand traffic displacement and respond with measures to reduce the effects of the closure.",
+			"The A360 forms part of the wider A303 Stonehenge project, a complex and sensitive scheme. The collected evidence supported the project team’s assessment of traffic management impacts and construction planning."
+		]
+	},
+	"a64-traffic-management": {
+		"title": "A64 Traffic Management",
+		"client": "Placeholder client",
+		"summary": "Sample project content for the A64 Traffic Management case study.",
+		"image": "/images/stock3.webp",
+		"imageAlt": "Placeholder image for the A64 Traffic Management case study",
+		"intro": [
+			"This is placeholder case study copy for the A64 Traffic Management page. Replace it with confirmed project details, client information, survey scope and outcomes before publishing."
+		]
+	}
+}
