@@ -17,12 +17,13 @@ export default defineNuxtConfig({
 
   // Global page transition
   app: {
+    baseURL: process.env.GITHUB_ACTIONS ? '/365surveys/' : '/',
     head: {
       title: '365 Surveys',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: '365 Surveys' },
+        { name: 'description', content: '365 Surveys' },
         { name: 'keywords', content: '365 Surveys, specialists in transportation data' },
         { name: 'author', content: '365 Surveys' },
         { property: 'og:title', content: '365 Surveys' },
