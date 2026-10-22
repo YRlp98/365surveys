@@ -1,26 +1,45 @@
 # 365 Surveys
 
-Built with [Nuxt 4](https://nuxt.com/docs/getting-started/introduction).
+![365 Surveys website displayed on desktop and mobile](docs/365surveys-cover.webp)
 
-## Setup
+This website was built for **[Fewzed Ltd](https://github.com/YRlp98/Fewzed-v2)** to present 365 Surveys, its transportation data services, and its case studies.
 
-Use Node.js 22.22.3+, 24.15.0+, or 26+ as specified in `package.json`.
+The site includes pages for services, traffic counts, case studies, company information, and contacting the team, with animated interactions and responsive layouts.
 
-Make sure to install the dependencies:
+**Website:** [365surveys.co.uk](https://www.365surveys.co.uk)
+
+## Technology and packages
+
+The project uses Nuxt 4 and Vue 3 with server-side rendering. Dependencies are listed in `package.json` and pinned in `package-lock.json`.
+
+| Package | Purpose |
+| --- | --- |
+| `nuxt` and `vue` | Application framework, pages, routing, server-side rendering, and UI. |
+| `@nuxtjs/tailwindcss` | Tailwind CSS integration for responsive styling. |
+| `@nuxt/icon` | Icon components used throughout the site. |
+| `@nuxt/image` and `ipx` | Responsive image sizes and WebP image delivery. |
+| `@nuxtjs/sitemap` | Sitemap generation for the public pages. |
+| `@vueuse/core` and `@vueuse/nuxt` | Vue composables and Nuxt integration. |
+| `gsap` | Page and component animations, including ScrollTrigger. |
+| `axios` | Requests from the contact form. |
+
+## Local development
+
+Use a Node.js version supported by `package.json`: `^22.22.3 || ^24.15.0 || >=26.0.0`.
+
+Install the locked dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3001`:
+Start the development server on port 3001:
 
 ```bash
-npm run dev
+npm run dev -- --port 3001
 ```
 
-## Production
+## Build and preview
 
 Build the application for production:
 
@@ -28,36 +47,36 @@ Build the application for production:
 npm run build
 ```
 
-Locally preview production build:
+Preview the production build locally:
 
 ```bash
 npm run preview
 ```
 
-## Deploy on the server using PM2:
+Static generation is also available with `npm run generate`.
 
-Force PM2 to restart the process with the specified configuration:
-```bash
-PORT=3001 pm2 start .output/server/index.mjs --name "365surveys" -f
-```
+## Deployment
 
-### If the forced restart doesn't work or you want to start clean, follow these steps:
+The production server runs the Nuxt Node.js build with PM2. Build the app, then start it on port 3001:
 
-Step 1: Stop and Delete the Existing Process
 ```bash
-pm2 stop 365surveys
-pm2 delete 365surveys
-```
-Step 2: Start the Process with the Correct Port
-```bash
+npm run build
 PORT=3001 pm2 start .output/server/index.mjs --name "365surveys"
 ```
 
-### Verify Everything is Running
-Check the PM2 process list and logs to ensure it's running on the correct port:
+To restart the existing process after deploying an update:
+
 ```bash
-pm2 list
-pm2 logs 365surveys
+pm2 restart 365surveys
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Project structure
+
+- `pages/` — Site pages and routes.
+- `components/` — Shared navigation, service and case-study cards, form, and UI components.
+- `layouts/` — Shared page layout.
+- `plugins/` — GSAP integration.
+- `assets/css/` — Global styles and Tailwind CSS.
+- `assets/videos/` — Site video assets.
+- `public/images/` — Optimized WebP images served by Nuxt Image.
+- `nuxt.config.ts` — Nuxt modules, site metadata, and sitemap configuration.
