@@ -7,7 +7,10 @@
 		"imageAlt": "A382 Drumbridges to Newton Abbot project",
 		"intro": [
 			"As part of the A382 Drumbridges to Newton Abbot scheme, 365 Surveys Ltd worked collaboratively with Milestone Infrastructure and Core Highways to define an efficient construction strategy while limiting the impact on the local community and environment. Carbon and pollutant data analysis informed air quality and traffic models, supporting decision-making throughout the planning process."
-		]
+		],
+		"supportingImage": "",
+		"supportingImageAlt": "",
+		"supportingText": []
 	},
 	"a360-traffic-management-stonehenge": {
 		"title": "A360 Traffic Management – Stonehenge",
@@ -34,6 +37,9 @@
 		"imageAlt": "Placeholder image for the A64 Traffic Management case study",
 		"intro": [
 			"This is placeholder case study copy for the A64 Traffic Management page. Replace it with confirmed project details, client information, survey scope and outcomes before publishing."
-		]
+		],
+		"supportingImage": "",
+		"supportingImageAlt": "",
+		"supportingText": []
 	}
 }
