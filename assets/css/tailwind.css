@@ -7,7 +7,7 @@ a * {
 	transition: color 180ms ease;
 }
 
-a:not(.btn):hover,
-a:not(.btn):hover * {
+a:not(.btn):not(.card):not(.item):hover,
+a:not(.btn):not(.card):not(.item):hover * {
 	color: #93c5fd !important;
 }

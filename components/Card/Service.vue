@@ -80,7 +80,7 @@ onMounted(() => {
 }
 
 .card:hover .card-content {
-	color: #93c5fd;
+	color: var(--gray-5);
 }
 
 .card:after {
@@ -90,7 +90,7 @@ onMounted(() => {
 	border-radius: 12px;
 	background: radial-gradient(
 		circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
-		rgb(147 197 253 / 0.22),
+		rgb(244 247 248 / 0.12),
 		transparent 15vmin
 	);
 	background-attachment: fixed;
@@ -106,7 +106,7 @@ onMounted(() => {
 	border-radius: 8px;
 	background: radial-gradient(
 			circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
-			rgb(147 197 253 / 0.6),
+			rgb(244 247 248 / 0.4),
 			transparent 15vmin
 		),
 		transparent;
