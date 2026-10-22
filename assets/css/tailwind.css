@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a,
+a * {
+	transition: color 180ms ease;
+}
+
+a:not(.btn):hover,
+a:not(.btn):hover * {
+	color: #93c5fd !important;
+}

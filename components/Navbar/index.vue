@@ -10,7 +10,11 @@
 			<!-- Left side -->
 			<div class="flex items-center text-gray-4">
 				<!-- Menu -->
-				<Icon name="ph:list-bold" class="text-3xl cursor-pointer hover:text-gray-5" @click="openMenu" />
+				<Icon
+					name="ph:list-bold"
+					class="text-3xl cursor-pointer transition-colors duration-200 hover:text-[#93c5fd]"
+					@click="openMenu"
+				/>
 
 				<!-- Links -->
 				<div class="pl-12 space-x-7 hidden md:block">
