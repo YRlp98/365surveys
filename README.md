@@ -1,8 +1,8 @@
 # 365 Surveys
 
-![365 Surveys website displayed on desktop and mobile](docs/365surveys-cover.webp)
+![365 Surveys website displayed on desktop and mobile](assets/images/365surveys-cover.webp)
 
-This website was built for **[Fewzed Ltd](https://github.com/YRlp98/Fewzed-v2)** to present 365 Surveys, its transportation data services, and its case studies.
+This website was built for **Fewzed Ltd** to present 365 Surveys, its transportation data services, and its case studies.
 
 The site includes pages for services, traffic counts, case studies, company information, and contacting the team, with animated interactions and responsive layouts.
 
@@ -77,6 +77,7 @@ pm2 restart 365surveys
 - `layouts/` — Shared page layout.
 - `plugins/` — GSAP integration.
 - `assets/css/` — Global styles and Tailwind CSS.
+- `assets/images/` — Site illustrations, logos, and README cover image.
 - `assets/videos/` — Site video assets.
 - `public/images/` — Optimized WebP images served by Nuxt Image.
 - `nuxt.config.ts` — Nuxt modules, site metadata, and sitemap configuration.
