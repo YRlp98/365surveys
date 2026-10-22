@@ -62,7 +62,7 @@
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2">
-							<img class="rounded-xl" src="/assets/images/case-studies/case-study-2-p3.webp" :alt="currentPage" />
+							<NuxtImg class="rounded-xl" src="/images/case-studies/case-study-2-p3.webp" :alt="currentPage" format="webp" quality="82" sizes="sm:100vw md:50vw" />
 						</div>
 					</div>
 
@@ -85,10 +85,13 @@
 						<div class="flex flex-col md:flex-row items-start gap-8 h-full">
 							<!-- Left -->
 							<div class="w-full md:w-1/2">
-								<img
+								<NuxtImg
 									class="rounded-xl cursor-pointer object-cover h-auto w-full"
-									src="/assets/images/case-studies/case-study-2-p1.webp"
+									src="/images/case-studies/case-study-2-p1.webp"
 									alt="currentPage"
+									format="webp"
+									quality="82"
+									sizes="sm:100vw md:50vw"
 								/>
 							</div>
 							<!-- Right -->
@@ -205,7 +208,7 @@ onMounted(() => {
 <style scoped>
 .hero-background {
 	background-image: linear-gradient(to bottom, rgba(30, 32, 35, 1), rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/case-studies/case-study-2-p3.webp");
+		url("/images/case-studies/case-study-2-p3.webp");
 	background-size: cover;
 	background-position: center;
 	position: relative;

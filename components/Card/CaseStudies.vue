@@ -138,21 +138,21 @@ const setActiveCard = (index: number) => {
 
 .item-1 {
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/case-studies/case-study-1-p1.jpg");
+		url("/images/case-studies/case-study-1-p1.webp");
 }
 
 .item-2 {
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/case-studies/case-study-2-p3.webp");
+		url("/images/case-studies/case-study-2-p3.webp");
 }
 
 .item-3 {
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/stock3.jpg");
+		url("/images/stock3.webp");
 }
 
 .item-4 {
 	background-image: linear-gradient(to bottom, rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/stock4.jpg");
+		url("/images/stock4.webp");
 }
 </style>

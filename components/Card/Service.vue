@@ -13,27 +13,19 @@
 				{{ description }}
 			</div>
 		</div>
-		<img
+		<NuxtImg
 			:src="currentImage"
 			alt="Project Card"
 			class="absolute left-0 bottom-0 z-[-1] overflow-hidden object-cover w-full h-full"
+			format="webp"
+			quality="82"
+			sizes="sm:100vw lg:50vw"
 		/>
 	</NuxtLink>
 </template>
 
 <script setup lang="ts">
 import { computed, defineProps, onMounted } from "vue";
-import stock1 from "/assets/images/stock1.jpg";
-import stock2 from "/assets/images/stock2.jpg";
-import stock3 from "/assets/images/stock3.jpg";
-import TrafficCounts from "/assets/images/services/TrafficCounts.webp";
-import driverBehaviour from "/assets/images/services/driverBehaviour.jpg";
-import journeyTime from "/assets/images/services/journeyTime.webp";
-import droneSurveys from "/assets/images/services/droneSurveys.jpg";
-import parking from "/assets/images/services/parking.jpg";
-import publicTransport from "/assets/images/services/publicTransport.jpg";
-import trafficSpeed from "/assets/images/services/trafficSpeed.jpg";
-import turningCounts from "/assets/images/services/turningCounts.jpg";
 
 const props = defineProps<{
 	title: string;
@@ -43,17 +35,17 @@ const props = defineProps<{
 }>();
 
 const images = {
-	stock1,
-	stock2,
-	stock3,
-	TrafficCounts,
-	journeyTime,
-	driverBehaviour,
-	droneSurveys,
-	parking,
-	publicTransport,
-	trafficSpeed,
-	turningCounts,
+	stock1: "/images/stock1.webp",
+	stock2: "/images/stock2.webp",
+	stock3: "/images/stock3.webp",
+	TrafficCounts: "/images/services/TrafficCounts.webp",
+	journeyTime: "/images/services/journeyTime.webp",
+	driverBehaviour: "/images/services/driverBehaviour.webp",
+	droneSurveys: "/images/services/droneSurveys.webp",
+	parking: "/images/services/parking.webp",
+	publicTransport: "/images/services/publicTransport.webp",
+	trafficSpeed: "/images/services/trafficSpeed.webp",
+	turningCounts: "/images/services/turningCounts.webp",
 };
 
 const currentImage = computed(() => images[props.image]);

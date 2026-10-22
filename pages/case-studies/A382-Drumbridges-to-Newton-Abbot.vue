@@ -60,7 +60,7 @@
 						</div>
 						<!-- Right Side -->
 						<div class="md:w-1/2">
-							<img class="rounded-xl" src="/assets/images/case-studies/case-study-1-p1.jpg" :alt="currentPage" />
+							<NuxtImg class="rounded-xl" src="/images/case-studies/case-study-1-p1.webp" :alt="currentPage" format="webp" quality="82" sizes="sm:100vw md:50vw" />
 						</div>
 					</div>
 
@@ -179,7 +179,7 @@ onMounted(() => {
 <style scoped>
 .hero-background {
 	background-image: linear-gradient(to bottom, rgba(30, 32, 35, 1), rgba(15, 16, 18, 0.5) 50%, rgba(30, 32, 35, 1)),
-		url("/assets/images/case-studies/case-study-1-p1.jpg");
+		url("/images/case-studies/case-study-1-p1.webp");
 	background-size: cover;
 	background-position: center;
 	position: relative;
