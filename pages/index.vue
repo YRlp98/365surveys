@@ -326,7 +326,7 @@ useSeoMeta({
 	twitterTitle: "365 Surveys - specialists in transportation data",
 	twitterDescription: "specialists in transportation data",
 	twitterImage: "/logo.png",
-	twitterCard: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "summary_large_image",
 });
 
 useHead({

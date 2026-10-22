@@ -1,5 +1,5 @@
 <template>
-	<NuxtLink class="card flex flex-col" :to="link">
+	<NuxtLink class="card flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400 focus-visible:outline-offset-4" :to="link">
 		<div class="gradient-overlay absolute inset-0 bg-black opacity-50 z-0"></div>
 		<!-- Content -->
 		<div class="z-10 card-content flex-grow p-10 flex flex-col justify-end text-gray-4 hover:text-gray-5">
@@ -15,7 +15,7 @@
 		</div>
 		<NuxtImg
 			:src="currentImage"
-			alt="Project Card"
+			:alt="title"
 			class="absolute left-0 bottom-0 z-[-1] overflow-hidden object-cover w-full h-full"
 			format="webp"
 			quality="82"

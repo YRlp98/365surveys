@@ -21,25 +21,25 @@
 					<CardService
 						class="h-[25rem]"
 						title="Traffic Counts"
-						description="Production of CAD modelling, simulations and rendering for mechanical and civil applications"
+						description="Reliable traffic volume data to help you understand how roads and junctions are used."
 						image="TrafficCounts"
-						link="#"
+						link="/services/traffic-counts"
 					/>
 
 					<CardService
 						class="h-[25rem]"
 						title="Driver behaviour"
-						description="Monitoring and analysis of driver behaviours using discrete methods and experienced experts"
+						description="Understand road user behaviour, interactions and movement patterns."
 						image="driverBehaviour"
-						link="#"
+						link="/services/driver-behaviour"
 					/>
 
 					<CardService
 						class="h-[25rem]"
 						title="Journey Times"
-						description="Monitoring and analysis of driver behaviours using discrete methods and experienced experts"
+						description="Measure journey duration and reliability across routes and time periods."
 						image="journeyTime"
-						link="#"
+						link="/services/journey-times"
 					/>
 
 					<CardService
@@ -47,7 +47,7 @@
 						title="Traffic Speed"
 						description="Automated and manual data collection using radar and laser technology"
 						image="trafficSpeed"
-						link="#"
+						link="/services/traffic-speed"
 					/>
 
 					<CardService
@@ -55,7 +55,7 @@
 						title="Drone surveys"
 						description="Traffic count and movement analytics, video, photogrammetry and LIDAR"
 						image="droneSurveys"
-						link="#"
+						link="/services/drone-surveys"
 					/>
 
 					<CardService
@@ -63,7 +63,7 @@
 						title="Turning Counts"
 						description="Video analysis of junctions to measure performance and identify patterns"
 						image="turningCounts"
-						link="#"
+						link="/services/turning-counts"
 					/>
 
 					<CardService
@@ -71,15 +71,15 @@
 						title="Parking"
 						description="Define demand and usage for parking both on and off street"
 						image="parking"
-						link="#"
+						link="/services/parking"
 					/>
 
 					<CardService
 						class="h-[25rem]"
 						title="Public Transport"
-						description="Monitoring and Data Analysis of public transportation routing and utilisation"
+						description="See how passengers use routes, stops and public transport services."
 						image="publicTransport"
-						link="#"
+						link="/services/public-transport"
 					/>
 				</div>
 			</div>
@@ -139,7 +139,7 @@ useSeoMeta({
 	twitterDescription:
 		"365 Surveys offers a variety of transportation data services, including traffic counts, driver behavior, drone surveys, and more.",
 	twitterImage: "https://365Surveys.co.uk/logo.png",
-	twitterCard: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "summary_large_image",
 });
 
 useHead({

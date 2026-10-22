@@ -226,7 +226,7 @@ useSeoMeta({
 	twitterDescription:
 		"365 SURVEYS specialists in transport data, from collection and monitoring to test plans and analytics.",
 	twitterImage: "https://365Surveys.co.uk/logo.png",
-	twitterCard: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "summary_large_image",
 });
 
 useHead({

@@ -39,18 +39,31 @@
 					</div>
 
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat.
+						Traffic counts show how many people use a road, junction or access point, and how that activity changes
+						throughout the day. We can collect data by vehicle type and agreed time interval, giving you a useful
+						baseline for transport assessments, scheme design and ongoing monitoring.
 					</p>
 
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-						anim id est laborum.
+						Our team can help define survey locations, dates, time periods and classifications around the question you
+						need to answer. The results are presented in a clear format so you can compare locations, identify busy
+						periods and use the evidence in your next project decision.
 					</p>
+
+					<div class="space-y-5 pt-4">
+						<h2 class="text-2xl font-bold">A survey built around your question</h2>
+						<p>
+							Every site has different data needs. We can agree the count points, survey dates, interval lengths and
+							vehicle categories with you before collection, so the survey captures the information your assessment
+							requires. Where useful, traffic counts can be planned alongside other transport surveys for a fuller view
+							of activity at a location.
+						</p>
+						<p>
+							The delivered data can help compare roads, approaches or periods and provide a dependable record for
+							design work, planning submissions and monitoring. We will confirm the reporting format and scope with you
+							so the results are straightforward to interpret and ready to use in your project.
+						</p>
+					</div>
 				</div>
 
 				<ButtonBackLeftArrow
@@ -72,6 +85,19 @@ const currentPage = computed(() => {
 	const routeName = route.name ? route.name.toString() : "";
 	const pageTitle = routeName.split("-").slice(1).join(" ");
 	return pageTitle ? pageTitle.replace(/-/g, " ") : "Page";
+});
+
+useSeoMeta({
+	title: "Traffic Counts | 365 Surveys",
+	description: "Traffic count surveys provide clear data on road and junction use, by time period and vehicle type.",
+	ogTitle: "Traffic Counts | 365 Surveys",
+	ogDescription: "Understand how roads and junctions are used with tailored traffic count surveys from 365 Surveys.",
+	ogImage: "https://365Surveys.co.uk/images/services/TrafficCounts.webp",
+	ogUrl: "https://365Surveys.co.uk/services/traffic-counts",
+	twitterTitle: "Traffic Counts | 365 Surveys",
+	twitterDescription: "Clear traffic count data to support transport assessments, design and monitoring.",
+	twitterImage: "https://365Surveys.co.uk/images/services/TrafficCounts.webp",
+	twitterCard: "summary_large_image",
 });
 
 onMounted(() => {

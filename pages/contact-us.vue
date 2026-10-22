@@ -87,7 +87,7 @@ useSeoMeta({
 	twitterDescription:
 		"Need support or have questions? Contact 365 Surveys for all inquiries related to transportation data solutions.",
 	twitterImage: "https://365Surveys.co.uk/logo.png",
-	twitterCard: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "summary_large_image",
 });
 
 useHead({

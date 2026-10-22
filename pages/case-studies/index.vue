@@ -75,7 +75,7 @@ useSeoMeta({
 	twitterDescription:
 		"Explore our case studies showcasing transportation solutions, expert analysis, and success stories. Learn how we've helped clients with unique challenges.",
 	twitterImage: "https://365Surveys.co.uk/logo.png",
-	twitterCard: "https://365Surveys.co.uk/logo.png",
+	twitterCard: "summary_large_image",
 });
 
 useHead({
