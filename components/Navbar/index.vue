@@ -21,7 +21,7 @@
 					<NuxtLink to="/" class="nav-link" active-class="active-link">
 						<button class="h-16 border-b-2 border-transparent hover:text-gray-5">Home</button>
 					</NuxtLink>
-					<NuxtLink to="services" class="nav-link" active-class="active-link">
+					<NuxtLink to="/services" class="nav-link" active-class="active-link">
 						<button class="h-16 border-b-2 border-transparent hover:text-gray-5">Services</button>
 					</NuxtLink>
 					<NuxtLink to="/about-us" class="nav-link" active-class="active-link">
@@ -84,17 +84,20 @@
 const { $gsap } = useNuxtApp();
 
 const isScrolled = ref(false);
-const menuOverlay = ref(null);
+const menuOverlay = ref<HTMLElement | null>(null);
 const navItems = ref<HTMLElement | null>(null);
 const navSocial = ref<HTMLElement | null>(null);
 
 const openMenu = () => {
-	menuOverlay.value.style.display = "block";
+	const overlay = menuOverlay.value;
+	if (!overlay) return;
 
-	$gsap.fromTo(menuOverlay.value, { x: "-100%" }, { x: "0%", duration: 1, ease: "power4.out" });
+	overlay.style.display = "block";
+	$gsap.fromTo(overlay, { x: "-100%" }, { x: "0%", duration: 1, ease: "power4.out" });
 
-	if (navItems.value) {
-		$gsap.from(navItems.value.children, {
+	const items = navItems.value;
+	if (items) {
+		$gsap.from(items.children, {
 			y: "-100",
 			stagger: 0.2,
 			duration: 0.75,
@@ -102,31 +105,37 @@ const openMenu = () => {
 			opacity: 0,
 			ease: "power4.out",
 			onStart: () => {
-				navItems.value.style.pointerEvents = "none";
+				items.style.pointerEvents = "none";
 			},
 			onComplete: () => {
-				navItems.value.style.pointerEvents = "auto";
+				items.style.pointerEvents = "auto";
 			},
 		});
 	}
 
-	$gsap.from(navSocial.value, {
-		y: "200",
-		stagger: 0.2,
-		duration: 1,
-		delay: 1,
-		opacity: 0,
-		ease: "power4.out",
-	});
+	const social = navSocial.value;
+	if (social) {
+		$gsap.from(social, {
+			y: "200",
+			stagger: 0.2,
+			duration: 1,
+			delay: 1,
+			opacity: 0,
+			ease: "power4.out",
+		});
+	}
 };
 
 const closeMenu = () => {
-	$gsap.to(menuOverlay.value, {
+	const overlay = menuOverlay.value;
+	if (!overlay) return;
+
+	$gsap.to(overlay, {
 		x: "-100%",
 		duration: 1,
 		ease: "power4.in",
 		onComplete: () => {
-			menuOverlay.value.style.display = "none";
+			overlay.style.display = "none";
 		},
 	});
 };
