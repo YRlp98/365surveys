@@ -46,9 +46,11 @@ export default defineNuxtConfig({
   },
 
   // Site maps
+  site: {
+    url: 'https://www.365Surveys.co.uk',
+  },
   sitemap: {
-    hostname: 'https://www.365Surveys.co.uk',
-    routes: [
+    urls: [
       '/',
     ],
   },
@@ -75,9 +77,6 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     '@vueuse/nuxt',
     "@nuxt/icon"
-  ],
-  buildModules: [
-    'nuxt-gsap-module'
   ],
 
   // Imports

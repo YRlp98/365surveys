@@ -1,8 +1,10 @@
-# Nuxt 3 Minimal Starter
+# 365 Surveys
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Built with [Nuxt 4](https://nuxt.com/docs/getting-started/introduction).
 
 ## Setup
+
+Use Node.js 22.22.3+, 24.15.0+, or 26+ as specified in `package.json`.
 
 Make sure to install the dependencies:
 

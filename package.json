@@ -2,6 +2,9 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,19 +13,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/icon": "^1.4.8",
-    "@nuxt/image": "^1.7.0",
-    "@nuxtjs/sitemap": "^6.0.0-beta.4",
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@vueuse/core": "^11.0.1",
-    "@vueuse/nuxt": "^11.0.1",
-    "axios": "^1.7.9",
-    "nuxt": "^3.12.4",
-    "nuxt-gsap-module": "^2.0.0",
-    "vue": "latest"
+    "@nuxt/icon": "^2.5.1",
+    "@nuxt/image": "^2.2.0",
+    "@nuxtjs/sitemap": "^9.1.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@vueuse/core": "^15.0.0",
+    "@vueuse/nuxt": "^15.0.0",
+    "axios": "^1.20.0",
+    "gsap": "^3.15.0",
+    "nuxt": "^4.6.2",
+    "vue": "^3.5.44"
   },
   "devDependencies": {
-    "@types/node": "^22.5.0",
-    "ipx": "^3.0.1"
+    "@types/node": "^22.20.5",
+    "ipx": "^4.0.0"
   }
 }

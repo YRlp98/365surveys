@@ -66,13 +66,13 @@
 			/>
 		</div>
 
-		<Button
+		<button
 			type="submit"
 			class="button relative flex items-center justify-center space-x-2 p-4 rounded-[12px] bg-primary shadow-lg cursor-pointer w-full hover:bg-primary/90"
 		>
 			<span class="text-white">Send Message</span>
 			<icon class="icon text-lg" name="iconamoon:send-fill" />
-		</Button>
+		</button>
 	</form>
 </template>
 
@@ -82,9 +82,6 @@ import axios from "axios";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const CAPTCHA_ENDPOINT = import.meta.env.VITE_CAPTCHA_ENDPOINT;
 const CONTACT_FORM_ENDPOINT = import.meta.env.VITE_CONTACT_FORM_ENDPOINT;
-
-const fullUrl = new URL(CONTACT_FORM_ENDPOINT, API_BASE_URL).href;
-console.log("Full URL:", fullUrl);
 
 const form = ref({
 	name: "",
